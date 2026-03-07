@@ -8,8 +8,8 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Computer_Nand/simulation/qsim
-Eand_from_nand
-Z1 w1772844715
+Eand16
+Z1 w1772851923
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 OGn598C_0mX<WSGfCb?AK2
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -18,22 +18,110 @@ Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 QZo1Vh6en2ZO3=hNmAfQ>0
 R0
-Z9 8AND_from_NAND.vho
-Z10 FAND_from_NAND.vho
+Z9 8AND16.vho
+Z10 FAND16.vho
+l0
+L36
+Ve<[6Pjnn_ATgQnd4H>F=n0
+!s100 ]@=EO]fl_SP5l2@^g[Qz<3
+Z11 OV;C;10.5b;63
+32
+Z12 !s110 1772851927
+!i10b 1
+Z13 !s108 1772851927.000000
+Z14 !s90 -work|work|AND16.vho|
+Z15 !s107 AND16.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 5 and16 0 22 e<[6Pjnn_ATgQnd4H>F=n0
+l154
+L44
+VCQIEn?I<kN]5N^XJ>F4G?1
+!s100 G3m<AfgjSD:gKZJQUF3792
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Eand16_vhd_vec_tst
+Z18 w1772851921
+R6
+R7
+R0
+Z19 8Waveform4.vwf.vht
+Z20 FWaveform4.vwf.vht
+l0
+L31
+VHi88jWe?[=;K@S`XN5C8<0
+!s100 3XDINSIILkEUGG?6gSZQC1
+R11
+32
+R12
+!i10b 1
+R13
+Z21 !s90 -work|work|Waveform4.vwf.vht|
+Z22 !s107 Waveform4.vwf.vht|
+!i113 1
+R16
+R17
+Aand16_arch
+R6
+R7
+DEx4 work 17 and16_vhd_vec_tst 0 22 Hi88jWe?[=;K@S`XN5C8<0
+l46
+L33
+V[AePcSEQ7F3AVL<9m7N<U2
+!s100 POKoQ?AYj94ZjnFFczb2M2
+R11
+32
+R12
+!i10b 1
+R13
+R21
+R22
+!i113 1
+R16
+R17
+Eand_from_nand
+Z23 w1772844715
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R0
+Z24 8AND_from_NAND.vho
+Z25 FAND_from_NAND.vho
 l0
 L36
 V^RH^`^ok8=@g`7V=VCJW91
 !s100 jkeG?b[Im>KI5S[Vi71V?2
-Z11 OV;C;10.5b;63
+R11
 32
-Z12 !s110 1772844716
+Z26 !s110 1772844716
 !i10b 1
-Z13 !s108 1772844716.000000
-Z14 !s90 -work|work|AND_from_NAND.vho|
-Z15 !s107 AND_from_NAND.vho|
+Z27 !s108 1772844716.000000
+Z28 !s90 -work|work|AND_from_NAND.vho|
+Z29 !s107 AND_from_NAND.vho|
 !i113 1
-Z16 o-work work
-Z17 tExplicit 1 CvgOpt 0
+R16
+R17
 Astructure
 R2
 R3
@@ -49,32 +137,32 @@ V`_dj1ckDQj[C`aEDocN9?2
 !s100 Bo2^7PVYO5YX@00Wob3OU3
 R11
 32
-R12
+R26
 !i10b 1
-R13
-R14
-R15
+R27
+R28
+R29
 !i113 1
 R16
 R17
 Eand_from_nand_vhd_vec_tst
-Z18 w1772844714
+Z30 w1772844714
 R6
 R7
 R0
-Z19 8Waveform1.vwf.vht
-Z20 FWaveform1.vwf.vht
+Z31 8Waveform1.vwf.vht
+Z32 FWaveform1.vwf.vht
 l0
 L31
 VEF6?JlLckm2@o`AWiJ@Ra3
 !s100 [fa1l5lMaB@?H_A4[[Alk2
 R11
 32
-R12
+R26
 !i10b 1
-R13
-Z21 !s90 -work|work|Waveform1.vwf.vht|
-Z22 !s107 Waveform1.vwf.vht|
+R27
+Z33 !s90 -work|work|Waveform1.vwf.vht|
+Z34 !s107 Waveform1.vwf.vht|
 !i113 1
 R16
 R17
@@ -88,16 +176,16 @@ VjdNffY1c9CVJXd`gM33U<1
 !s100 OSg3Ubl]dSPZMeDdQa4dS3
 R11
 32
-R12
+R26
 !i10b 1
-R13
-R21
-R22
+R27
+R33
+R34
 !i113 1
 R16
 R17
 Eor_from_nand
-Z23 w1772845041
+Z35 w1772845041
 R2
 R3
 R4
@@ -106,19 +194,19 @@ R6
 R7
 R8
 R0
-Z24 8OR_from_NAND.vho
-Z25 FOR_from_NAND.vho
+Z36 8OR_from_NAND.vho
+Z37 FOR_from_NAND.vho
 l0
 L36
 VOX_R;VL43h0HTloCaoXWA1
 !s100 hKjM6:^aHW[`UUS2g^:2d1
 R11
 32
-Z26 !s110 1772845041
+Z38 !s110 1772845041
 !i10b 1
-Z27 !s108 1772845041.000000
-Z28 !s90 -work|work|OR_from_NAND.vho|
-Z29 !s107 OR_from_NAND.vho|
+Z39 !s108 1772845041.000000
+Z40 !s90 -work|work|OR_from_NAND.vho|
+Z41 !s107 OR_from_NAND.vho|
 !i113 1
 R16
 R17
@@ -137,32 +225,32 @@ V>ILofc;86bYL1goRU4P[71
 !s100 Ne8b>eXhfgFZENFE[ki182
 R11
 32
-R26
+R38
 !i10b 1
-R27
-R28
-R29
+R39
+R40
+R41
 !i113 1
 R16
 R17
 Eor_from_nand_vhd_vec_tst
-Z30 w1772845039
+Z42 w1772845039
 R6
 R7
 R0
-Z31 8Waveform2.vwf.vht
-Z32 FWaveform2.vwf.vht
+Z43 8Waveform2.vwf.vht
+Z44 FWaveform2.vwf.vht
 l0
 L31
 V:_Nz0T?R4gf5lSN>R8TS41
 !s100 @UkRCThTz?bIjUY]iTa2z1
 R11
 32
-Z33 !s110 1772845042
+Z45 !s110 1772845042
 !i10b 1
-R27
-Z34 !s90 -work|work|Waveform2.vwf.vht|
-Z35 !s107 Waveform2.vwf.vht|
+R39
+Z46 !s90 -work|work|Waveform2.vwf.vht|
+Z47 !s107 Waveform2.vwf.vht|
 !i113 1
 R16
 R17
@@ -176,16 +264,16 @@ VLBgP`8UWC0kA6?YWo^i=;3
 !s100 FRa<hFbZ_@Hkai>D5CAM?0
 R11
 32
-R33
+R45
 !i10b 1
-R27
-R34
-R35
+R39
+R46
+R47
 !i113 1
 R16
 R17
 Exor_nand
-Z36 w1772845437
+Z48 w1772845437
 R2
 R3
 R4
@@ -194,19 +282,19 @@ R6
 R7
 R8
 R0
-Z37 8XOR_NAND.vho
-Z38 FXOR_NAND.vho
+Z49 8XOR_NAND.vho
+Z50 FXOR_NAND.vho
 l0
 L36
 VMP58FQ^3X?GK^WJEb:NJG0
 !s100 Lb7UCmMXQnQ=DfMI0bWU>1
 R11
 32
-Z39 !s110 1772845438
+Z51 !s110 1772845438
 !i10b 1
-Z40 !s108 1772845438.000000
-Z41 !s90 -work|work|XOR_NAND.vho|
-Z42 !s107 XOR_NAND.vho|
+Z52 !s108 1772845438.000000
+Z53 !s90 -work|work|XOR_NAND.vho|
+Z54 !s107 XOR_NAND.vho|
 !i113 1
 R16
 R17
@@ -225,50 +313,50 @@ V3B@_CSWkARf7Sal8A2Qm]0
 !s100 S1O?>1VDR8;>]1dbO?Hi63
 R11
 32
-R39
+R51
 !i10b 1
-R40
-R41
-R42
+R52
+R53
+R54
 !i113 1
 R16
 R17
 Exor_nand_vhd_vec_tst
-Z43 w1772845436
+Z55 w1772845436
 R6
 R7
 R0
-Z44 8Waveform3.vwf.vht
-Z45 FWaveform3.vwf.vht
+Z56 8Waveform3.vwf.vht
+Z57 FWaveform3.vwf.vht
 l0
 L31
 V`=gc:W?Na1FDk:QF@=U]20
 !s100 jKR>8]@@7i=AUJz2JJW_k3
 R11
 32
-R39
+R51
 !i10b 1
-R40
-Z46 !s90 -work|work|Waveform3.vwf.vht|
-Z47 !s107 Waveform3.vwf.vht|
+R52
+Z58 !s90 -work|work|Waveform3.vwf.vht|
+Z59 !s107 Waveform3.vwf.vht|
 !i113 1
 R16
 R17
 Axor_nand_arch
 R6
 R7
-Z48 DEx4 work 20 xor_nand_vhd_vec_tst 0 22 `=gc:W?Na1FDk:QF@=U]20
+DEx4 work 20 xor_nand_vhd_vec_tst 0 22 `=gc:W?Na1FDk:QF@=U]20
 l46
 L33
 VU]X::PH>V7]5Mkf0`LnIc1
 !s100 LM8YDP:eSD5H[FD4BI21j1
 R11
 32
-R39
+R51
 !i10b 1
-R40
-R46
-R47
+R52
+R58
+R59
 !i113 1
 R16
 R17
