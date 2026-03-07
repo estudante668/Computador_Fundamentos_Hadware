@@ -1,0 +1,6 @@
+|AND_from_NAND
+A => X.IN0
+B => X.IN1
+Y << X.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Computer_Nand/AND_from_NAND.vhd
+source_file = 1, C:/Computer_Nand/Waveform.vwf
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Computer_Nand/db/AND_from_NAND.cbx.xml
+design_name = AND_from_NAND
+instance = comp, \Y~output\, Y~output, AND_from_NAND, 1
+instance = comp, \A~input\, A~input, AND_from_NAND, 1
+instance = comp, \B~input\, B~input, AND_from_NAND, 1
+instance = comp, \X~0\, X~0, AND_from_NAND, 1

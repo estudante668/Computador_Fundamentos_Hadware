@@ -1,0 +1,8 @@
+|XOR_NAND
+A => X.IN0
+A => Y1.IN1
+B => X.IN1
+B => Y2.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

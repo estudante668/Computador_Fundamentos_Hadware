@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/Computer_Nand/XOR_NAND.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Computer_Nand/db/XOR_NAND.cbx.xml
+design_name = XOR_NAND
+instance = comp, \Y~output\, Y~output, XOR_NAND, 1
+instance = comp, \A~input\, A~input, XOR_NAND, 1
+instance = comp, \B~input\, B~input, XOR_NAND, 1
+instance = comp, \Y~0\, Y~0, XOR_NAND, 1
