@@ -1,0 +1,12 @@
+|OR8WAY
+A[0] => S0.IN0
+A[1] => S0.IN1
+A[2] => S1.IN0
+A[3] => S1.IN1
+A[4] => S2.IN0
+A[5] => S2.IN1
+A[6] => S3.IN0
+A[7] => S3.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
