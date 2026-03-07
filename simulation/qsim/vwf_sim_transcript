@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AND16 -c AND16 --vector_source="C:/Computer_Nand/Waveform4.vwf" --testbench_file="C:/Computer_Nand/simulation/qsim/Waveform4.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off OR16_FROM_NAND -c OR16_FROM_NAND --vector_source="C:/Computer_Nand/Waveform5.vwf" --testbench_file="C:/Computer_Nand/simulation/qsim/Waveform5.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,16 +25,16 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Fri Mar 06 23:52:00 2026
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off AND16 -c AND16 --vector_source=C:/Computer_Nand/Waveform4.vwf --testbench_file=C:/Computer_Nand/simulation/qsim/Waveform4.vwf.vht
-Info (119006): Selected device 5CGXFC7C7F23C8 for design "AND16"
+    Info: Processing started: Sat Mar 07 06:30:10 2026
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off OR16_FROM_NAND -c OR16_FROM_NAND --vector_source=C:/Computer_Nand/Waveform5.vwf --testbench_file=C:/Computer_Nand/simulation/qsim/Waveform5.vwf.vht
+Info (119006): Selected device 5CGXFC7C7F23C8 for design "OR16_FROM_NAND"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Computer_Nand/simulation/qsim/" AND16 -c AND16
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Computer_Nand/simulation/qsim/" OR16_FROM_NAND -c OR16_FROM_NAND
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -52,14 +52,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Fri Mar 06 23:52:02 2026
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Computer_Nand/simulation/qsim/ AND16 -c AND16
-Info (119006): Selected device 5CGXFC7C7F23C8 for design "AND16"
+    Info: Processing started: Sat Mar 07 06:30:12 2026
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Computer_Nand/simulation/qsim/ OR16_FROM_NAND -c OR16_FROM_NAND
+Info (119006): Selected device 5CGXFC7C7F23C8 for design "OR16_FROM_NAND"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file AND16.vho in folder "C:/Computer_Nand/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file OR16_FROM_NAND.vho in folder "C:/Computer_Nand/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4728 megabytes
-    Info: Processing ended: Fri Mar 06 23:52:03 2026
+    Info: Processing ended: Sat Mar 07 06:30:13 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -67,26 +67,25 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-C:/Computer_Nand/simulation/qsim/AND16.do generated.
+C:/Computer_Nand/simulation/qsim/OR16_FROM_NAND.do generated.
 
 Completed successfully. 
 
 **** Running the ModelSim simulation ****
 
-c:/intelfpga_lite/18.1/modelsim_ase/win32aloem//vsim -c -do AND16.do
+c:/intelfpga_lite/18.1/modelsim_ase/win32aloem//vsim -c -do OR16_FROM_NAND.do
 
 Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
 
-# do AND16.do
+# do OR16_FROM_NAND.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
-
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:52:07 on Mar 06,2026
-# vcom -work work AND16.vho 
+# Start time: 06:30:14 on Mar 07,2026
+# vcom -work work OR16_FROM_NAND.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -95,56 +94,55 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package VITAL_Primitives
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
-# -- Compiling entity AND16
+# -- Compiling entity OR16_FROM_NAND
 
-# -- Compiling architecture structure of AND16
-# End time: 23:52:07 on Mar 06,2026, Elapsed time: 0:00:00
+# -- Compiling architecture structure of OR16_FROM_NAND
+# End time: 06:30:14 on Mar 07,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:52:07 on Mar 06,2026
-# vcom -work work Waveform4.vwf.vht 
+# Start time: 06:30:14 on Mar 07,2026
+# vcom -work work Waveform5.vwf.vht 
 # -- Loading package STANDARD
 
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity AND16_vhd_vec_tst
-# -- Compiling architecture AND16_arch of AND16_vhd_vec_tst
-
-# End time: 23:52:07 on Mar 06,2026, Elapsed time: 0:00:00
+# -- Compiling entity OR16_FROM_NAND_vhd_vec_tst
+# -- Compiling architecture OR16_FROM_NAND_arch of OR16_FROM_NAND_vhd_vec_tst
+# End time: 06:30:15 on Mar 07,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.AND16_vhd_vec_tst 
-# Start time: 23:52:09 on Mar 06,2026
+# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.OR16_FROM_NAND_vhd_vec_tst 
+# Start time: 06:30:15 on Mar 07,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.and16_vhd_vec_tst(and16_arch)
+# Loading work.or16_from_nand_vhd_vec_tst(or16_from_nand_arch)
 # Loading altera_lnsim.altera_lnsim_components
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
 # Loading cyclonev.cyclonev_atom_pack(body)
 # Loading cyclonev.cyclonev_components
-# Loading work.and16(structure)
+# Loading work.or16_from_nand(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # after#32
 
-# End time: 23:52:09 on Mar 06,2026, Elapsed time: 0:00:00
+# End time: 06:30:16 on Mar 07,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Computer_Nand/Waveform4.vwf...
+Reading C:/Computer_Nand/Waveform5.vwf...
 
-Reading C:/Computer_Nand/simulation/qsim/AND16.msim.vcd...
+Reading C:/Computer_Nand/simulation/qsim/OR16_FROM_NAND.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Computer_Nand/simulation/qsim/AND16_20260306235209.sim.vwf
+Writing the resulting VWF to C:/Computer_Nand/simulation/qsim/OR16_FROM_NAND_20260307063016.sim.vwf
 
 Finished VCD to VWF conversion.
 
