@@ -1,0 +1,33 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity DEMUX8WAY is
+    port(
+        INP : in  STD_LOGIC;
+        SEL : in  STD_LOGIC_VECTOR(2 downto 0);
+
+        A : out STD_LOGIC;
+        B : out STD_LOGIC;
+        C : out STD_LOGIC;
+        D : out STD_LOGIC;
+        E : out STD_LOGIC;
+        F : out STD_LOGIC;
+        G : out STD_LOGIC;
+        H : out STD_LOGIC
+    );
+end DEMUX8WAY;
+
+architecture GATE_LEVEL of DEMUX8WAY is
+begin
+
+A <= INP when SEL="000" else '0';
+B <= INP when SEL="001" else '0';
+C <= INP when SEL="010" else '0';
+D <= INP when SEL="011" else '0';
+
+E <= INP when SEL="100" else '0';
+F <= INP when SEL="101" else '0';
+G <= INP when SEL="110" else '0';
+H <= INP when SEL="111" else '0';
+
+end GATE_LEVEL;

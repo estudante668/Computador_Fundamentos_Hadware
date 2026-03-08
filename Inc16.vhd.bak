@@ -1,0 +1,45 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Inc16 is
+    Port (
+        inp  : in  STD_LOGIC_VECTOR(15 downto 0);
+        outp : out STD_LOGIC_VECTOR(15 downto 0)
+    );
+end Inc16;
+
+architecture Structural of Inc16 is
+
+    component HalfAdder
+        Port (
+            a     : in  STD_LOGIC;
+            b     : in  STD_LOGIC;
+            sum   : out STD_LOGIC;
+            carry : out STD_LOGIC
+        );
+    end component;
+
+    signal c : STD_LOGIC_VECTOR(16 downto 0);
+
+begin
+
+    c(0) <= '1';   -- adiciona +1
+
+    HA0 : HalfAdder port map(inp(0),  c(0), outp(0),  c(1));
+    HA1 : HalfAdder port map(inp(1),  c(1), outp(1),  c(2));
+    HA2 : HalfAdder port map(inp(2),  c(2), outp(2),  c(3));
+    HA3 : HalfAdder port map(inp(3),  c(3), outp(3),  c(4));
+    HA4 : HalfAdder port map(inp(4),  c(4), outp(4),  c(5));
+    HA5 : HalfAdder port map(inp(5),  c(5), outp(5),  c(6));
+    HA6 : HalfAdder port map(inp(6),  c(6), outp(6),  c(7));
+    HA7 : HalfAdder port map(inp(7),  c(7), outp(7),  c(8));
+    HA8 : HalfAdder port map(inp(8),  c(8), outp(8),  c(9));
+    HA9 : HalfAdder port map(inp(9),  c(9), outp(9),  c(10));
+    HA10: HalfAdder port map(inp(10), c(10), outp(10), c(11));
+    HA11: HalfAdder port map(inp(11), c(11), outp(11), c(12));
+    HA12: HalfAdder port map(inp(12), c(12), outp(12), c(13));
+    HA13: HalfAdder port map(inp(13), c(13), outp(13), c(14));
+    HA14: HalfAdder port map(inp(14), c(14), outp(14), c(15));
+    HA15: HalfAdder port map(inp(15), c(15), outp(15), c(16));
+
+end Structural;

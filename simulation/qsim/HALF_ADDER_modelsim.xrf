@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Computer_Nand/HALF_ADDER.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Computer_Nand/db/HALF_ADDER.cbx.xml
+design_name = HALF_ADDER
+instance = comp, \SUM~output\, SUM~output, HALF_ADDER, 1
+instance = comp, \CARRY~output\, CARRY~output, HALF_ADDER, 1
+instance = comp, \A~input\, A~input, HALF_ADDER, 1
+instance = comp, \B~input\, B~input, HALF_ADDER, 1
+instance = comp, \SUM~0\, SUM~0, HALF_ADDER, 1
+instance = comp, \CARRY~0\, CARRY~0, HALF_ADDER, 1

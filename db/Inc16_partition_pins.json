@@ -1,0 +1,137 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "OUTP[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTP[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTP[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTP[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTP[4]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTP[5]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTP[6]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTP[7]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTP[8]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTP[9]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTP[10]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTP[11]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTP[12]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTP[13]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTP[14]",
+					"strict" : false
+				},
+				{
+					"name" : "OUTP[15]",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "A[11]",
+					"strict" : false
+				},
+				{
+					"name" : "A[12]",
+					"strict" : false
+				},
+				{
+					"name" : "A[13]",
+					"strict" : false
+				},
+				{
+					"name" : "A[14]",
+					"strict" : false
+				},
+				{
+					"name" : "A[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

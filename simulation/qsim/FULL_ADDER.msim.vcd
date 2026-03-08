@@ -1,0 +1,82 @@
+$comment
+	File created using the following command:
+		vcd file FULL_ADDER.msim.vcd -direction
+$end
+$date
+	Sat Mar 07 10:48:45 2026
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module full_adder_vhd_vec_tst $end
+$var wire 1 ! A $end
+$var wire 1 " B $end
+$var wire 1 # Cin $end
+$var wire 1 $ Cout $end
+$var wire 1 % SUM $end
+
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var wire 1 ) devoe $end
+$var wire 1 * devclrn $end
+$var wire 1 + devpor $end
+$var wire 1 , ww_devoe $end
+$var wire 1 - ww_devclrn $end
+$var wire 1 . ww_devpor $end
+$var wire 1 / ww_A $end
+$var wire 1 0 ww_B $end
+$var wire 1 1 ww_Cin $end
+$var wire 1 2 ww_SUM $end
+$var wire 1 3 ww_Cout $end
+$var wire 1 4 \SUM~output_o\ $end
+$var wire 1 5 \Cout~output_o\ $end
+$var wire 1 6 \A~input_o\ $end
+$var wire 1 7 \B~input_o\ $end
+$var wire 1 8 \Cin~input_o\ $end
+$var wire 1 9 \SUM~0_combout\ $end
+$var wire 1 : \Cout~0_combout\ $end
+$var wire 1 ; \ALT_INV_A~input_o\ $end
+$var wire 1 < \ALT_INV_B~input_o\ $end
+$var wire 1 = \ALT_INV_Cin~input_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+1"
+1#
+1$
+1%
+0&
+1'
+x(
+1)
+1*
+1+
+1,
+1-
+1.
+1/
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+1:
+0;
+0<
+0=
+$end
+#1000000
