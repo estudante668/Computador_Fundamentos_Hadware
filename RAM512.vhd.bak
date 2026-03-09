@@ -1,0 +1,32 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity RAM512 is
+    port (
+        clk     : in  std_logic;
+        in_v    : in  std_logic_vector(15 downto 0);
+        load    : in  std_logic;
+        address : in  std_logic_vector(8 downto 0);
+        out_v   : out std_logic_vector(15 downto 0)
+    );
+end RAM512;
+
+architecture Structural of RAM512 is
+    signal l : std_logic_vector(7 downto 0);
+    type ram_outs is array (0 to 7) of std_logic_vector(15 downto 0);
+    signal r : ram_outs;
+
+    component RAM64 is
+        port (clk: in std_logic; in_v: in std_logic_vector(15 downto 0); load: in std_logic; address: in std_logic_vector(5 downto 0); out_v: out std_logic_vector(15 downto 0));
+    end component;
+    -- (Adicione aqui as declarações de DMUX8WAY e MUX8WAY16 como nos arquivos anteriores)
+
+begin
+    dist: entity work.DMUX8WAY port map (load, address(8 downto 6), l(0), l(1), l(2), l(3), l(4), l(5), l(6), l(7));
+
+    gen_ram: for i in 0 to 7 generate
+        ram_inst: RAM64 port map (clk, in_v, l(i), address(5 downto 0), r(i));
+    end generate;
+
+    mux: entity work.MUX8WAY16 port map (r(0), r(1), r(2), r(3), r(4), r(5), r(6), r(7), address(8 downto 6), out_v);
+end Structural;
