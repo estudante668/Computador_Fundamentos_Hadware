@@ -1,8 +1,8 @@
-# do Bit_Register.do
+# do REGISTER16.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:16:51 on Mar 09,2026
-# vcom -work work Bit_Register.vho 
+# Start time: 10:06:09 on Mar 09,2026
+# vcom -work work REGISTER16.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -13,26 +13,26 @@
 # -- Loading package altera_lnsim_components
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
-# -- Compiling entity Bit_Register
-# -- Compiling architecture structure of Bit_Register
-# End time: 09:16:51 on Mar 09,2026, Elapsed time: 0:00:00
+# -- Compiling entity REGISTER16
+# -- Compiling architecture structure of REGISTER16
+# End time: 10:06:09 on Mar 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:16:51 on Mar 09,2026
-# vcom -work work Waveform15.vwf.vht 
+# Start time: 10:06:09 on Mar 09,2026
+# vcom -work work Waveform16.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity Bit_Register_vhd_vec_tst
-# -- Compiling architecture Bit_Register_arch of Bit_Register_vhd_vec_tst
-# End time: 09:16:52 on Mar 09,2026, Elapsed time: 0:00:01
+# -- Compiling entity REGISTER16_vhd_vec_tst
+# -- Compiling architecture REGISTER16_arch of REGISTER16_vhd_vec_tst
+# End time: 10:06:10 on Mar 09,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Bit_Register_vhd_vec_tst 
-# Start time: 09:16:52 on Mar 09,2026
+# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.REGISTER16_vhd_vec_tst 
+# Start time: 10:06:10 on Mar 09,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.bit_register_vhd_vec_tst(bit_register_arch)
+# Loading work.register16_vhd_vec_tst(register16_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
 # Loading altera.dffeas_pack
@@ -40,12 +40,11 @@
 # Loading altera_lnsim.altera_lnsim_components
 # Loading cyclonev.cyclonev_atom_pack(body)
 # Loading cyclonev.cyclonev_components
-# Loading work.bit_register(structure)
+# Loading work.register16(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
-# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
 # after#34
-# End time: 09:16:52 on Mar 09,2026, Elapsed time: 0:00:00
+# End time: 10:06:10 on Mar 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

@@ -4,71 +4,71 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "outp[0]",
+					"name" : "out_v[0]",
 					"strict" : false
 				},
 				{
-					"name" : "outp[1]",
+					"name" : "out_v[1]",
 					"strict" : false
 				},
 				{
-					"name" : "outp[2]",
+					"name" : "out_v[2]",
 					"strict" : false
 				},
 				{
-					"name" : "outp[3]",
+					"name" : "out_v[3]",
 					"strict" : false
 				},
 				{
-					"name" : "outp[4]",
+					"name" : "out_v[4]",
 					"strict" : false
 				},
 				{
-					"name" : "outp[5]",
+					"name" : "out_v[5]",
 					"strict" : false
 				},
 				{
-					"name" : "outp[6]",
+					"name" : "out_v[6]",
 					"strict" : false
 				},
 				{
-					"name" : "outp[7]",
+					"name" : "out_v[7]",
 					"strict" : false
 				},
 				{
-					"name" : "outp[8]",
+					"name" : "out_v[8]",
 					"strict" : false
 				},
 				{
-					"name" : "outp[9]",
+					"name" : "out_v[9]",
 					"strict" : false
 				},
 				{
-					"name" : "outp[10]",
+					"name" : "out_v[10]",
 					"strict" : false
 				},
 				{
-					"name" : "outp[11]",
+					"name" : "out_v[11]",
 					"strict" : false
 				},
 				{
-					"name" : "outp[12]",
+					"name" : "out_v[12]",
 					"strict" : false
 				},
 				{
-					"name" : "outp[13]",
+					"name" : "out_v[13]",
 					"strict" : false
 				},
 				{
-					"name" : "outp[14]",
+					"name" : "out_v[14]",
 					"strict" : false
 				},
 				{
-					"name" : "outp[15]",
+					"name" : "out_v[15]",
 					"strict" : false
 				},
 				{
-					"name" : "inp[0]",
+					"name" : "in_v[0]",
 					"strict" : false
 				},
 				{
@@ -80,63 +80,63 @@
 					"strict" : false
 				},
 				{
-					"name" : "inp[1]",
+					"name" : "in_v[1]",
 					"strict" : false
 				},
 				{
-					"name" : "inp[2]",
+					"name" : "in_v[2]",
 					"strict" : false
 				},
 				{
-					"name" : "inp[3]",
+					"name" : "in_v[3]",
 					"strict" : false
 				},
 				{
-					"name" : "inp[4]",
+					"name" : "in_v[4]",
 					"strict" : false
 				},
 				{
-					"name" : "inp[5]",
+					"name" : "in_v[5]",
 					"strict" : false
 				},
 				{
-					"name" : "inp[6]",
+					"name" : "in_v[6]",
 					"strict" : false
 				},
 				{
-					"name" : "inp[7]",
+					"name" : "in_v[7]",
 					"strict" : false
 				},
 				{
-					"name" : "inp[8]",
+					"name" : "in_v[8]",
 					"strict" : false
 				},
 				{
-					"name" : "inp[9]",
+					"name" : "in_v[9]",
 					"strict" : false
 				},
 				{
-					"name" : "inp[10]",
+					"name" : "in_v[10]",
 					"strict" : false
 				},
 				{
-					"name" : "inp[11]",
+					"name" : "in_v[11]",
 					"strict" : false
 				},
 				{
-					"name" : "inp[12]",
+					"name" : "in_v[12]",
 					"strict" : false
 				},
 				{
-					"name" : "inp[13]",
+					"name" : "in_v[13]",
 					"strict" : false
 				},
 				{
-					"name" : "inp[14]",
+					"name" : "in_v[14]",
 					"strict" : false
 				},
 				{
-					"name" : "inp[15]",
+					"name" : "in_v[15]",
 					"strict" : false
 				}
 			]

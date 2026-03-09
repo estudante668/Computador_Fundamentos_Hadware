@@ -1,5 +1,5 @@
-Analysis & Synthesis report for Register16
-Sun Mar 08 21:13:41 2026
+Analysis & Synthesis report for REGISTER16
+Mon Mar 09 10:03:30 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,10 +42,10 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Mar 08 21:13:41 2026       ;
+; Analysis & Synthesis Status     ; Successful - Mon Mar 09 10:03:30 2026       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                   ; Register16                                  ;
-; Top-level Entity Name           ; Register16                                  ;
+; Revision Name                   ; REGISTER16                                  ;
+; Top-level Entity Name           ; REGISTER16                                  ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 16                                          ;
@@ -68,7 +68,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; Register16         ; Register16         ;
+; Top-level entity name                                                           ; REGISTER16         ; REGISTER16         ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -165,13 +165,14 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                           ;
-+----------------------------------+-----------------+-----------------+---------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path    ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------+---------+
-; Register16.vhd                   ; yes             ; User VHDL File  ; C:/Computer_Nand/Register16.vhd ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                   ;
++----------------------------------+-----------------+-----------------------+-----------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path      ; Library ;
++----------------------------------+-----------------+-----------------------+-----------------------------------+---------+
+; REGISTER16.vhd                   ; yes             ; User VHDL File        ; C:/Computer_Nand/REGISTER16.vhd   ;         ;
+; bit_register.vhd                 ; yes             ; Auto-Found VHDL File  ; C:/Computer_Nand/bit_register.vhd ;         ;
++----------------------------------+-----------------+-----------------------+-----------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -201,13 +202,29 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |Register16                ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 34   ; 0            ; |Register16         ; Register16  ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                         ;
++---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name  ; Library Name ;
++---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+--------------+--------------+
+; |REGISTER16                           ; 0 (0)               ; 16 (0)                    ; 0                 ; 0          ; 34   ; 0            ; |REGISTER16                                  ; REGISTER16   ; work         ;
+;    |Bit_Register:\GEN_REG:0:REG_BIT|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |REGISTER16|Bit_Register:\GEN_REG:0:REG_BIT  ; Bit_Register ; work         ;
+;    |Bit_Register:\GEN_REG:10:REG_BIT| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |REGISTER16|Bit_Register:\GEN_REG:10:REG_BIT ; Bit_Register ; work         ;
+;    |Bit_Register:\GEN_REG:11:REG_BIT| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |REGISTER16|Bit_Register:\GEN_REG:11:REG_BIT ; Bit_Register ; work         ;
+;    |Bit_Register:\GEN_REG:12:REG_BIT| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |REGISTER16|Bit_Register:\GEN_REG:12:REG_BIT ; Bit_Register ; work         ;
+;    |Bit_Register:\GEN_REG:13:REG_BIT| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |REGISTER16|Bit_Register:\GEN_REG:13:REG_BIT ; Bit_Register ; work         ;
+;    |Bit_Register:\GEN_REG:14:REG_BIT| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |REGISTER16|Bit_Register:\GEN_REG:14:REG_BIT ; Bit_Register ; work         ;
+;    |Bit_Register:\GEN_REG:15:REG_BIT| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |REGISTER16|Bit_Register:\GEN_REG:15:REG_BIT ; Bit_Register ; work         ;
+;    |Bit_Register:\GEN_REG:1:REG_BIT|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |REGISTER16|Bit_Register:\GEN_REG:1:REG_BIT  ; Bit_Register ; work         ;
+;    |Bit_Register:\GEN_REG:2:REG_BIT|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |REGISTER16|Bit_Register:\GEN_REG:2:REG_BIT  ; Bit_Register ; work         ;
+;    |Bit_Register:\GEN_REG:3:REG_BIT|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |REGISTER16|Bit_Register:\GEN_REG:3:REG_BIT  ; Bit_Register ; work         ;
+;    |Bit_Register:\GEN_REG:4:REG_BIT|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |REGISTER16|Bit_Register:\GEN_REG:4:REG_BIT  ; Bit_Register ; work         ;
+;    |Bit_Register:\GEN_REG:5:REG_BIT|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |REGISTER16|Bit_Register:\GEN_REG:5:REG_BIT  ; Bit_Register ; work         ;
+;    |Bit_Register:\GEN_REG:6:REG_BIT|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |REGISTER16|Bit_Register:\GEN_REG:6:REG_BIT  ; Bit_Register ; work         ;
+;    |Bit_Register:\GEN_REG:7:REG_BIT|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |REGISTER16|Bit_Register:\GEN_REG:7:REG_BIT  ; Bit_Register ; work         ;
+;    |Bit_Register:\GEN_REG:8:REG_BIT|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |REGISTER16|Bit_Register:\GEN_REG:8:REG_BIT  ; Bit_Register ; work         ;
+;    |Bit_Register:\GEN_REG:9:REG_BIT|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |REGISTER16|Bit_Register:\GEN_REG:9:REG_BIT  ; Bit_Register ; work         ;
++---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -255,14 +272,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Mar 08 21:13:24 2026
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Register16 -c Register16
+    Info: Processing started: Mon Mar 09 10:03:15 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off REGISTER16 -c REGISTER16
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file register16.vhd
-    Info (12022): Found design unit 1: Register16-STRUCTURAL File: C:/Computer_Nand/Register16.vhd Line: 13
-    Info (12023): Found entity 1: Register16 File: C:/Computer_Nand/Register16.vhd Line: 4
-Info (12127): Elaborating entity "Register16" for the top level hierarchy
+    Info (12022): Found design unit 1: REGISTER16-Structural File: C:/Computer_Nand/REGISTER16.vhd Line: 13
+    Info (12023): Found entity 1: REGISTER16 File: C:/Computer_Nand/REGISTER16.vhd Line: 4
+Info (12127): Elaborating entity "REGISTER16" for the top level hierarchy
+Warning (12125): Using design file bit_register.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Bit_Register-Behavioral File: C:/Computer_Nand/bit_register.vhd Line: 13
+    Info (12023): Found entity 1: Bit_Register File: C:/Computer_Nand/bit_register.vhd Line: 4
+Info (12128): Elaborating entity "Bit_Register" for hierarchy "Bit_Register:\GEN_REG:0:REG_BIT" File: C:/Computer_Nand/REGISTER16.vhd Line: 30
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -270,10 +291,10 @@ Info (21057): Implemented 50 device resources after synthesis - the final resour
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 16 output pins
     Info (21061): Implemented 16 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4860 megabytes
-    Info: Processing ended: Sun Mar 08 21:13:41 2026
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:38
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4864 megabytes
+    Info: Processing ended: Mon Mar 09 10:03:30 2026
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:31
 
 

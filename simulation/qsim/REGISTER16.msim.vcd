@@ -1,0 +1,297 @@
+$comment
+	File created using the following command:
+		vcd file REGISTER16.msim.vcd -direction
+$end
+$date
+	Mon Mar 09 10:06:10 2026
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module register16_vhd_vec_tst $end
+$var wire 1 ! clk $end
+$var wire 1 " in_v [15] $end
+$var wire 1 # in_v [14] $end
+$var wire 1 $ in_v [13] $end
+$var wire 1 % in_v [12] $end
+$var wire 1 & in_v [11] $end
+$var wire 1 ' in_v [10] $end
+$var wire 1 ( in_v [9] $end
+$var wire 1 ) in_v [8] $end
+$var wire 1 * in_v [7] $end
+$var wire 1 + in_v [6] $end
+$var wire 1 , in_v [5] $end
+$var wire 1 - in_v [4] $end
+$var wire 1 . in_v [3] $end
+$var wire 1 / in_v [2] $end
+$var wire 1 0 in_v [1] $end
+$var wire 1 1 in_v [0] $end
+$var wire 1 2 load $end
+$var wire 1 3 out_v [15] $end
+$var wire 1 4 out_v [14] $end
+$var wire 1 5 out_v [13] $end
+$var wire 1 6 out_v [12] $end
+$var wire 1 7 out_v [11] $end
+$var wire 1 8 out_v [10] $end
+$var wire 1 9 out_v [9] $end
+$var wire 1 : out_v [8] $end
+$var wire 1 ; out_v [7] $end
+$var wire 1 < out_v [6] $end
+$var wire 1 = out_v [5] $end
+$var wire 1 > out_v [4] $end
+$var wire 1 ? out_v [3] $end
+$var wire 1 @ out_v [2] $end
+$var wire 1 A out_v [1] $end
+$var wire 1 B out_v [0] $end
+
+$scope module i1 $end
+$var wire 1 C gnd $end
+$var wire 1 D vcc $end
+$var wire 1 E unknown $end
+$var wire 1 F devoe $end
+$var wire 1 G devclrn $end
+$var wire 1 H devpor $end
+$var wire 1 I ww_devoe $end
+$var wire 1 J ww_devclrn $end
+$var wire 1 K ww_devpor $end
+$var wire 1 L ww_in_v [15] $end
+$var wire 1 M ww_in_v [14] $end
+$var wire 1 N ww_in_v [13] $end
+$var wire 1 O ww_in_v [12] $end
+$var wire 1 P ww_in_v [11] $end
+$var wire 1 Q ww_in_v [10] $end
+$var wire 1 R ww_in_v [9] $end
+$var wire 1 S ww_in_v [8] $end
+$var wire 1 T ww_in_v [7] $end
+$var wire 1 U ww_in_v [6] $end
+$var wire 1 V ww_in_v [5] $end
+$var wire 1 W ww_in_v [4] $end
+$var wire 1 X ww_in_v [3] $end
+$var wire 1 Y ww_in_v [2] $end
+$var wire 1 Z ww_in_v [1] $end
+$var wire 1 [ ww_in_v [0] $end
+$var wire 1 \ ww_load $end
+$var wire 1 ] ww_clk $end
+$var wire 1 ^ ww_out_v [15] $end
+$var wire 1 _ ww_out_v [14] $end
+$var wire 1 ` ww_out_v [13] $end
+$var wire 1 a ww_out_v [12] $end
+$var wire 1 b ww_out_v [11] $end
+$var wire 1 c ww_out_v [10] $end
+$var wire 1 d ww_out_v [9] $end
+$var wire 1 e ww_out_v [8] $end
+$var wire 1 f ww_out_v [7] $end
+$var wire 1 g ww_out_v [6] $end
+$var wire 1 h ww_out_v [5] $end
+$var wire 1 i ww_out_v [4] $end
+$var wire 1 j ww_out_v [3] $end
+$var wire 1 k ww_out_v [2] $end
+$var wire 1 l ww_out_v [1] $end
+$var wire 1 m ww_out_v [0] $end
+$var wire 1 n \out_v[0]~output_o\ $end
+$var wire 1 o \out_v[1]~output_o\ $end
+$var wire 1 p \out_v[2]~output_o\ $end
+$var wire 1 q \out_v[3]~output_o\ $end
+$var wire 1 r \out_v[4]~output_o\ $end
+$var wire 1 s \out_v[5]~output_o\ $end
+$var wire 1 t \out_v[6]~output_o\ $end
+$var wire 1 u \out_v[7]~output_o\ $end
+$var wire 1 v \out_v[8]~output_o\ $end
+$var wire 1 w \out_v[9]~output_o\ $end
+$var wire 1 x \out_v[10]~output_o\ $end
+$var wire 1 y \out_v[11]~output_o\ $end
+$var wire 1 z \out_v[12]~output_o\ $end
+$var wire 1 { \out_v[13]~output_o\ $end
+$var wire 1 | \out_v[14]~output_o\ $end
+$var wire 1 } \out_v[15]~output_o\ $end
+$var wire 1 ~ \clk~input_o\ $end
+$var wire 1 !! \in_v[0]~input_o\ $end
+$var wire 1 "! \load~input_o\ $end
+$var wire 1 #! \GEN_REG:0:REG_BIT|q_internal~q\ $end
+$var wire 1 $! \in_v[1]~input_o\ $end
+$var wire 1 %! \GEN_REG:1:REG_BIT|q_internal~q\ $end
+$var wire 1 &! \in_v[2]~input_o\ $end
+$var wire 1 '! \GEN_REG:2:REG_BIT|q_internal~q\ $end
+$var wire 1 (! \in_v[3]~input_o\ $end
+$var wire 1 )! \GEN_REG:3:REG_BIT|q_internal~q\ $end
+$var wire 1 *! \in_v[4]~input_o\ $end
+$var wire 1 +! \GEN_REG:4:REG_BIT|q_internal~q\ $end
+$var wire 1 ,! \in_v[5]~input_o\ $end
+$var wire 1 -! \GEN_REG:5:REG_BIT|q_internal~q\ $end
+$var wire 1 .! \in_v[6]~input_o\ $end
+$var wire 1 /! \GEN_REG:6:REG_BIT|q_internal~q\ $end
+$var wire 1 0! \in_v[7]~input_o\ $end
+$var wire 1 1! \GEN_REG:7:REG_BIT|q_internal~q\ $end
+$var wire 1 2! \in_v[8]~input_o\ $end
+$var wire 1 3! \GEN_REG:8:REG_BIT|q_internal~q\ $end
+$var wire 1 4! \in_v[9]~input_o\ $end
+$var wire 1 5! \GEN_REG:9:REG_BIT|q_internal~q\ $end
+$var wire 1 6! \in_v[10]~input_o\ $end
+$var wire 1 7! \GEN_REG:10:REG_BIT|q_internal~q\ $end
+$var wire 1 8! \in_v[11]~input_o\ $end
+$var wire 1 9! \GEN_REG:11:REG_BIT|q_internal~q\ $end
+$var wire 1 :! \in_v[12]~input_o\ $end
+$var wire 1 ;! \GEN_REG:12:REG_BIT|q_internal~q\ $end
+$var wire 1 <! \in_v[13]~input_o\ $end
+$var wire 1 =! \GEN_REG:13:REG_BIT|q_internal~q\ $end
+$var wire 1 >! \in_v[14]~input_o\ $end
+$var wire 1 ?! \GEN_REG:14:REG_BIT|q_internal~q\ $end
+$var wire 1 @! \in_v[15]~input_o\ $end
+$var wire 1 A! \GEN_REG:15:REG_BIT|q_internal~q\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+12
+0C
+1D
+xE
+1F
+1G
+1H
+1I
+1J
+1K
+1\
+0]
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+1"!
+0#!
+1$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+0-!
+0.!
+0/!
+10!
+01!
+02!
+03!
+04!
+05!
+06!
+07!
+08!
+09!
+0:!
+0;!
+0<!
+0=!
+0>!
+0?!
+0@!
+0A!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+1*
+0+
+0,
+0-
+0.
+0/
+10
+01
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+1T
+0U
+0V
+0W
+0X
+0Y
+1Z
+0[
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+$end
+#150000
+1!
+1]
+1~
+1%!
+11!
+1u
+1o
+1f
+1l
+1A
+1;
+#300000
+0!
+02
+0]
+0\
+0"!
+0~
+#1000000

@@ -1,5 +1,5 @@
-Flow report for Register16
-Sun Mar 08 21:13:41 2026
+Flow report for REGISTER16
+Mon Mar 09 10:06:08 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,10 +40,10 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun Mar 08 21:13:41 2026       ;
+; Flow Status                     ; Successful - Mon Mar 09 10:06:08 2026       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                   ; Register16                                  ;
-; Top-level Entity Name           ; Register16                                  ;
+; Revision Name                   ; REGISTER16                                  ;
+; Top-level Entity Name           ; REGISTER16                                  ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CGXFC7C7F23C8                              ;
 ; Timing Models                   ; Final                                       ;
@@ -67,9 +67,9 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/08/2026 21:13:25 ;
+; Start date & time ; 03/09/2026 10:03:16 ;
 ; Main task         ; Compilation         ;
-; Revision Name     ; Register16          ;
+; Revision Name     ; REGISTER16          ;
 +-------------------+---------------------+
 
 
@@ -78,7 +78,9 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 167690714441955.177301520407600        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 167690714441955.177306139612908        ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -91,8 +93,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4860 MB             ; 00:00:38                           ;
-; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:38                           ;
+; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4864 MB             ; 00:00:31                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4728 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4728 MB             ; 00:00:01                           ;
+; Total                ; 00:00:20     ; --                      ; --                  ; 00:00:35                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -102,13 +108,21 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; DESKTOP-UUHGSRK  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-UUHGSRK  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-UUHGSRK  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-UUHGSRK  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-UUHGSRK  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off Register16 -c Register16
+quartus_map --read_settings_files=on --write_settings_files=off REGISTER16 -c REGISTER16
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off REGISTER16 -c REGISTER16 --vector_source=C:/Computer_Nand/Waveform16.vwf --testbench_file=C:/Computer_Nand/simulation/qsim/Waveform16.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Computer_Nand/simulation/qsim/ REGISTER16 -c REGISTER16
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off REGISTER16 -c REGISTER16 --vector_source=C:/Computer_Nand/Waveform16.vwf --testbench_file=C:/Computer_Nand/simulation/qsim/Waveform16.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Computer_Nand/simulation/qsim/ REGISTER16 -c REGISTER16
 
 
 

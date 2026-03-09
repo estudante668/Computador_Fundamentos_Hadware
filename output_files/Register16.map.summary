@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Successful - Sun Mar 08 21:13:41 2026
+Analysis & Synthesis Status : Successful - Mon Mar 09 10:03:30 2026
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-Revision Name : Register16
-Top-level Entity Name : Register16
+Revision Name : REGISTER16
+Top-level Entity Name : REGISTER16
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 16
