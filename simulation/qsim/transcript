@@ -1,8 +1,8 @@
-# do REGISTER16.do
+# do PC.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:06:09 on Mar 09,2026
-# vcom -work work REGISTER16.vho 
+# Start time: 16:43:58 on Mar 09,2026
+# vcom -work work PC.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -13,26 +13,26 @@
 # -- Loading package altera_lnsim_components
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
-# -- Compiling entity REGISTER16
-# -- Compiling architecture structure of REGISTER16
-# End time: 10:06:09 on Mar 09,2026, Elapsed time: 0:00:00
+# -- Compiling entity PC
+# -- Compiling architecture structure of PC
+# End time: 16:43:58 on Mar 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:06:09 on Mar 09,2026
-# vcom -work work Waveform16.vwf.vht 
+# Start time: 16:43:58 on Mar 09,2026
+# vcom -work work Waveform18.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity REGISTER16_vhd_vec_tst
-# -- Compiling architecture REGISTER16_arch of REGISTER16_vhd_vec_tst
-# End time: 10:06:10 on Mar 09,2026, Elapsed time: 0:00:01
+# -- Compiling entity PC_vhd_vec_tst
+# -- Compiling architecture PC_arch of PC_vhd_vec_tst
+# End time: 16:43:58 on Mar 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.REGISTER16_vhd_vec_tst 
-# Start time: 10:06:10 on Mar 09,2026
+# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.PC_vhd_vec_tst 
+# Start time: 16:43:59 on Mar 09,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.register16_vhd_vec_tst(register16_arch)
+# Loading work.pc_vhd_vec_tst(pc_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
 # Loading altera.dffeas_pack
@@ -40,11 +40,14 @@
 # Loading altera_lnsim.altera_lnsim_components
 # Loading cyclonev.cyclonev_atom_pack(body)
 # Loading cyclonev.cyclonev_components
-# Loading work.register16(structure)
+# Loading work.pc(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
+# ** Warning: Design size of 10043 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
 # after#34
-# End time: 10:06:10 on Mar 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# End time: 16:43:59 on Mar 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1

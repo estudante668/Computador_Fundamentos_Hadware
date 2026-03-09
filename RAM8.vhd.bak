@@ -1,0 +1,64 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity RAM8 is
+    port (
+        clk     : in  std_logic;
+        in_v    : in  std_logic_vector(15 downto 0); -- Dado de entrada
+        load    : in  std_logic;                    -- Comando de escrita
+        address : in  std_logic_vector(2 downto 0);  -- Seletor de 3 bits (2^3 = 8)
+        out_v   : out std_logic_vector(15 downto 0)  -- Dado de saída
+    );
+end RAM8;
+
+architecture Structural of RAM8 is
+
+    -- Sinais para os 'loads' individuais de cada registrador
+    signal l0, l1, l2, l3, l4, l5, l6, l7 : std_logic;
+    
+    -- Sinais para as saídas de cada um dos 8 registradores
+    type ram_outputs is array (0 to 7) of std_logic_vector(15 downto 0);
+    signal r : ram_outputs;
+
+    -- Componentes necessários
+    component Register16 is
+        port (in_v : in std_logic_vector(15 downto 0); load, clk : in std_logic; out_v : out std_logic_vector(15 downto 0));
+    end component;
+
+    component DMUX8WAY is
+        port (in_v : in std_logic; sel : in std_logic_vector(2 downto 0); a, b, c, d, e, f, g, h : out std_logic);
+    end component;
+
+    component Mux8Way16 is
+        port (a, b, c, d, e, f, g, h : in std_logic_vector(15 downto 0); sel : in std_logic_vector(2 downto 0); out_v : out std_logic_vector(15 downto 0));
+    end component;
+
+begin
+
+    -- 1. Distribui o sinal de LOAD global para o registrador específico
+    distribuidor_load: DMUX8WAY port map (
+        in_v => load, 
+        sel  => address, 
+        a => l0, b => l1, c => l2, d => l3, e => l4, f => l5, g => l6, h => l7
+    );
+
+    -- 2. Instancia os 8 Registradores
+    -- Todos recebem o mesmo dado de entrada 'in_v', mas só o que tiver 'load = 1' vai salvar
+    reg0: Register16 port map (in_v, l0, clk, r(0));
+    reg1: Register16 port map (in_v, l1, clk, r(1));
+    reg2: Register16 port map (in_v, l2, clk, r(2));
+    reg3: Register16 port map (in_v, l3, clk, r(3));
+    reg4: Register16 port map (in_v, l4, clk, r(4));
+    reg5: Register16 port map (in_v, l5, clk, r(5));
+    reg6: Register16 port map (in_v, l6, clk, r(6));
+    reg7: Register16 port map (in_v, l7, clk, r(7));
+
+    -- 3. Seleciona qual saída de registrador vai para o pino 'out_v' da RAM
+    seletor_saida: Mux8Way16 port map (
+        a => r(0), b => r(1), c => r(2), d => r(3), 
+        e => r(4), f => r(5), g => r(6), h => r(7), 
+        sel => address, 
+        out_v => out_v
+    );
+
+end Structural;

@@ -1,0 +1,1148 @@
+$comment
+	File created using the following command:
+		vcd file RAM8.msim.vcd -direction
+$end
+$date
+	Mon Mar 09 11:46:37 2026
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module ram8_vhd_vec_tst $end
+$var wire 1 ! address [2] $end
+$var wire 1 " address [1] $end
+$var wire 1 # address [0] $end
+$var wire 1 $ clk $end
+$var wire 1 % in_v [15] $end
+$var wire 1 & in_v [14] $end
+$var wire 1 ' in_v [13] $end
+$var wire 1 ( in_v [12] $end
+$var wire 1 ) in_v [11] $end
+$var wire 1 * in_v [10] $end
+$var wire 1 + in_v [9] $end
+$var wire 1 , in_v [8] $end
+$var wire 1 - in_v [7] $end
+$var wire 1 . in_v [6] $end
+$var wire 1 / in_v [5] $end
+$var wire 1 0 in_v [4] $end
+$var wire 1 1 in_v [3] $end
+$var wire 1 2 in_v [2] $end
+$var wire 1 3 in_v [1] $end
+$var wire 1 4 in_v [0] $end
+$var wire 1 5 load $end
+$var wire 1 6 out_v [15] $end
+$var wire 1 7 out_v [14] $end
+$var wire 1 8 out_v [13] $end
+$var wire 1 9 out_v [12] $end
+$var wire 1 : out_v [11] $end
+$var wire 1 ; out_v [10] $end
+$var wire 1 < out_v [9] $end
+$var wire 1 = out_v [8] $end
+$var wire 1 > out_v [7] $end
+$var wire 1 ? out_v [6] $end
+$var wire 1 @ out_v [5] $end
+$var wire 1 A out_v [4] $end
+$var wire 1 B out_v [3] $end
+$var wire 1 C out_v [2] $end
+$var wire 1 D out_v [1] $end
+$var wire 1 E out_v [0] $end
+
+$scope module i1 $end
+$var wire 1 F gnd $end
+$var wire 1 G vcc $end
+$var wire 1 H unknown $end
+$var wire 1 I devoe $end
+$var wire 1 J devclrn $end
+$var wire 1 K devpor $end
+$var wire 1 L ww_devoe $end
+$var wire 1 M ww_devclrn $end
+$var wire 1 N ww_devpor $end
+$var wire 1 O ww_clk $end
+$var wire 1 P ww_in_v [15] $end
+$var wire 1 Q ww_in_v [14] $end
+$var wire 1 R ww_in_v [13] $end
+$var wire 1 S ww_in_v [12] $end
+$var wire 1 T ww_in_v [11] $end
+$var wire 1 U ww_in_v [10] $end
+$var wire 1 V ww_in_v [9] $end
+$var wire 1 W ww_in_v [8] $end
+$var wire 1 X ww_in_v [7] $end
+$var wire 1 Y ww_in_v [6] $end
+$var wire 1 Z ww_in_v [5] $end
+$var wire 1 [ ww_in_v [4] $end
+$var wire 1 \ ww_in_v [3] $end
+$var wire 1 ] ww_in_v [2] $end
+$var wire 1 ^ ww_in_v [1] $end
+$var wire 1 _ ww_in_v [0] $end
+$var wire 1 ` ww_load $end
+$var wire 1 a ww_address [2] $end
+$var wire 1 b ww_address [1] $end
+$var wire 1 c ww_address [0] $end
+$var wire 1 d ww_out_v [15] $end
+$var wire 1 e ww_out_v [14] $end
+$var wire 1 f ww_out_v [13] $end
+$var wire 1 g ww_out_v [12] $end
+$var wire 1 h ww_out_v [11] $end
+$var wire 1 i ww_out_v [10] $end
+$var wire 1 j ww_out_v [9] $end
+$var wire 1 k ww_out_v [8] $end
+$var wire 1 l ww_out_v [7] $end
+$var wire 1 m ww_out_v [6] $end
+$var wire 1 n ww_out_v [5] $end
+$var wire 1 o ww_out_v [4] $end
+$var wire 1 p ww_out_v [3] $end
+$var wire 1 q ww_out_v [2] $end
+$var wire 1 r ww_out_v [1] $end
+$var wire 1 s ww_out_v [0] $end
+$var wire 1 t \out_v[0]~output_o\ $end
+$var wire 1 u \out_v[1]~output_o\ $end
+$var wire 1 v \out_v[2]~output_o\ $end
+$var wire 1 w \out_v[3]~output_o\ $end
+$var wire 1 x \out_v[4]~output_o\ $end
+$var wire 1 y \out_v[5]~output_o\ $end
+$var wire 1 z \out_v[6]~output_o\ $end
+$var wire 1 { \out_v[7]~output_o\ $end
+$var wire 1 | \out_v[8]~output_o\ $end
+$var wire 1 } \out_v[9]~output_o\ $end
+$var wire 1 ~ \out_v[10]~output_o\ $end
+$var wire 1 !! \out_v[11]~output_o\ $end
+$var wire 1 "! \out_v[12]~output_o\ $end
+$var wire 1 #! \out_v[13]~output_o\ $end
+$var wire 1 $! \out_v[14]~output_o\ $end
+$var wire 1 %! \out_v[15]~output_o\ $end
+$var wire 1 &! \address[0]~input_o\ $end
+$var wire 1 '! \clk~input_o\ $end
+$var wire 1 (! \in_v[0]~input_o\ $end
+$var wire 1 )! \address[2]~input_o\ $end
+$var wire 1 *! \address[1]~input_o\ $end
+$var wire 1 +! \load~input_o\ $end
+$var wire 1 ,! \distribuidor_load|B~0_combout\ $end
+$var wire 1 -! \reg1|GEN_REG:0:REG_BIT|q_internal~q\ $end
+$var wire 1 .! \distribuidor_load|F~0_combout\ $end
+$var wire 1 /! \reg5|GEN_REG:0:REG_BIT|q_internal~q\ $end
+$var wire 1 0! \distribuidor_load|D~0_combout\ $end
+$var wire 1 1! \reg3|GEN_REG:0:REG_BIT|q_internal~q\ $end
+$var wire 1 2! \distribuidor_load|H~0_combout\ $end
+$var wire 1 3! \reg7|GEN_REG:0:REG_BIT|q_internal~q\ $end
+$var wire 1 4! \seletor_saida|out_v[0]~0_combout\ $end
+$var wire 1 5! \distribuidor_load|C~0_combout\ $end
+$var wire 1 6! \reg2|GEN_REG:0:REG_BIT|q_internal~q\ $end
+$var wire 1 7! \distribuidor_load|G~0_combout\ $end
+$var wire 1 8! \reg6|GEN_REG:0:REG_BIT|q_internal~q\ $end
+$var wire 1 9! \distribuidor_load|A~0_combout\ $end
+$var wire 1 :! \reg0|GEN_REG:0:REG_BIT|q_internal~q\ $end
+$var wire 1 ;! \distribuidor_load|E~0_combout\ $end
+$var wire 1 <! \reg4|GEN_REG:0:REG_BIT|q_internal~q\ $end
+$var wire 1 =! \seletor_saida|out_v[0]~1_combout\ $end
+$var wire 1 >! \seletor_saida|out_v[0]~2_combout\ $end
+$var wire 1 ?! \in_v[1]~input_o\ $end
+$var wire 1 @! \reg1|GEN_REG:1:REG_BIT|q_internal~q\ $end
+$var wire 1 A! \reg5|GEN_REG:1:REG_BIT|q_internal~q\ $end
+$var wire 1 B! \reg3|GEN_REG:1:REG_BIT|q_internal~q\ $end
+$var wire 1 C! \reg7|GEN_REG:1:REG_BIT|q_internal~q\ $end
+$var wire 1 D! \seletor_saida|out_v[1]~3_combout\ $end
+$var wire 1 E! \reg2|GEN_REG:1:REG_BIT|q_internal~q\ $end
+$var wire 1 F! \reg6|GEN_REG:1:REG_BIT|q_internal~q\ $end
+$var wire 1 G! \reg0|GEN_REG:1:REG_BIT|q_internal~q\ $end
+$var wire 1 H! \reg4|GEN_REG:1:REG_BIT|q_internal~q\ $end
+$var wire 1 I! \seletor_saida|out_v[1]~4_combout\ $end
+$var wire 1 J! \seletor_saida|out_v[1]~5_combout\ $end
+$var wire 1 K! \in_v[2]~input_o\ $end
+$var wire 1 L! \reg1|GEN_REG:2:REG_BIT|q_internal~q\ $end
+$var wire 1 M! \reg5|GEN_REG:2:REG_BIT|q_internal~q\ $end
+$var wire 1 N! \reg3|GEN_REG:2:REG_BIT|q_internal~q\ $end
+$var wire 1 O! \reg7|GEN_REG:2:REG_BIT|q_internal~q\ $end
+$var wire 1 P! \seletor_saida|out_v[2]~6_combout\ $end
+$var wire 1 Q! \reg2|GEN_REG:2:REG_BIT|q_internal~q\ $end
+$var wire 1 R! \reg6|GEN_REG:2:REG_BIT|q_internal~q\ $end
+$var wire 1 S! \reg0|GEN_REG:2:REG_BIT|q_internal~q\ $end
+$var wire 1 T! \reg4|GEN_REG:2:REG_BIT|q_internal~q\ $end
+$var wire 1 U! \seletor_saida|out_v[2]~7_combout\ $end
+$var wire 1 V! \seletor_saida|out_v[2]~8_combout\ $end
+$var wire 1 W! \in_v[3]~input_o\ $end
+$var wire 1 X! \reg1|GEN_REG:3:REG_BIT|q_internal~q\ $end
+$var wire 1 Y! \reg5|GEN_REG:3:REG_BIT|q_internal~q\ $end
+$var wire 1 Z! \reg3|GEN_REG:3:REG_BIT|q_internal~q\ $end
+$var wire 1 [! \reg7|GEN_REG:3:REG_BIT|q_internal~q\ $end
+$var wire 1 \! \seletor_saida|out_v[3]~9_combout\ $end
+$var wire 1 ]! \reg2|GEN_REG:3:REG_BIT|q_internal~q\ $end
+$var wire 1 ^! \reg6|GEN_REG:3:REG_BIT|q_internal~q\ $end
+$var wire 1 _! \reg0|GEN_REG:3:REG_BIT|q_internal~q\ $end
+$var wire 1 `! \reg4|GEN_REG:3:REG_BIT|q_internal~q\ $end
+$var wire 1 a! \seletor_saida|out_v[3]~10_combout\ $end
+$var wire 1 b! \seletor_saida|out_v[3]~11_combout\ $end
+$var wire 1 c! \in_v[4]~input_o\ $end
+$var wire 1 d! \reg1|GEN_REG:4:REG_BIT|q_internal~q\ $end
+$var wire 1 e! \reg5|GEN_REG:4:REG_BIT|q_internal~q\ $end
+$var wire 1 f! \reg3|GEN_REG:4:REG_BIT|q_internal~q\ $end
+$var wire 1 g! \reg7|GEN_REG:4:REG_BIT|q_internal~q\ $end
+$var wire 1 h! \seletor_saida|out_v[4]~12_combout\ $end
+$var wire 1 i! \reg2|GEN_REG:4:REG_BIT|q_internal~q\ $end
+$var wire 1 j! \reg6|GEN_REG:4:REG_BIT|q_internal~q\ $end
+$var wire 1 k! \reg0|GEN_REG:4:REG_BIT|q_internal~q\ $end
+$var wire 1 l! \reg4|GEN_REG:4:REG_BIT|q_internal~q\ $end
+$var wire 1 m! \seletor_saida|out_v[4]~13_combout\ $end
+$var wire 1 n! \seletor_saida|out_v[4]~14_combout\ $end
+$var wire 1 o! \in_v[5]~input_o\ $end
+$var wire 1 p! \reg1|GEN_REG:5:REG_BIT|q_internal~q\ $end
+$var wire 1 q! \reg5|GEN_REG:5:REG_BIT|q_internal~q\ $end
+$var wire 1 r! \reg3|GEN_REG:5:REG_BIT|q_internal~q\ $end
+$var wire 1 s! \reg7|GEN_REG:5:REG_BIT|q_internal~q\ $end
+$var wire 1 t! \seletor_saida|out_v[5]~15_combout\ $end
+$var wire 1 u! \reg2|GEN_REG:5:REG_BIT|q_internal~q\ $end
+$var wire 1 v! \reg6|GEN_REG:5:REG_BIT|q_internal~q\ $end
+$var wire 1 w! \reg0|GEN_REG:5:REG_BIT|q_internal~q\ $end
+$var wire 1 x! \reg4|GEN_REG:5:REG_BIT|q_internal~q\ $end
+$var wire 1 y! \seletor_saida|out_v[5]~16_combout\ $end
+$var wire 1 z! \seletor_saida|out_v[5]~17_combout\ $end
+$var wire 1 {! \in_v[6]~input_o\ $end
+$var wire 1 |! \reg1|GEN_REG:6:REG_BIT|q_internal~q\ $end
+$var wire 1 }! \reg5|GEN_REG:6:REG_BIT|q_internal~q\ $end
+$var wire 1 ~! \reg3|GEN_REG:6:REG_BIT|q_internal~q\ $end
+$var wire 1 !" \reg7|GEN_REG:6:REG_BIT|q_internal~q\ $end
+$var wire 1 "" \seletor_saida|out_v[6]~18_combout\ $end
+$var wire 1 #" \reg2|GEN_REG:6:REG_BIT|q_internal~q\ $end
+$var wire 1 $" \reg6|GEN_REG:6:REG_BIT|q_internal~q\ $end
+$var wire 1 %" \reg0|GEN_REG:6:REG_BIT|q_internal~q\ $end
+$var wire 1 &" \reg4|GEN_REG:6:REG_BIT|q_internal~q\ $end
+$var wire 1 '" \seletor_saida|out_v[6]~19_combout\ $end
+$var wire 1 (" \seletor_saida|out_v[6]~20_combout\ $end
+$var wire 1 )" \in_v[7]~input_o\ $end
+$var wire 1 *" \reg1|GEN_REG:7:REG_BIT|q_internal~q\ $end
+$var wire 1 +" \reg5|GEN_REG:7:REG_BIT|q_internal~q\ $end
+$var wire 1 ," \reg3|GEN_REG:7:REG_BIT|q_internal~q\ $end
+$var wire 1 -" \reg7|GEN_REG:7:REG_BIT|q_internal~q\ $end
+$var wire 1 ." \seletor_saida|out_v[7]~21_combout\ $end
+$var wire 1 /" \reg2|GEN_REG:7:REG_BIT|q_internal~q\ $end
+$var wire 1 0" \reg6|GEN_REG:7:REG_BIT|q_internal~q\ $end
+$var wire 1 1" \reg0|GEN_REG:7:REG_BIT|q_internal~q\ $end
+$var wire 1 2" \reg4|GEN_REG:7:REG_BIT|q_internal~q\ $end
+$var wire 1 3" \seletor_saida|out_v[7]~22_combout\ $end
+$var wire 1 4" \seletor_saida|out_v[7]~23_combout\ $end
+$var wire 1 5" \in_v[8]~input_o\ $end
+$var wire 1 6" \reg1|GEN_REG:8:REG_BIT|q_internal~q\ $end
+$var wire 1 7" \reg5|GEN_REG:8:REG_BIT|q_internal~q\ $end
+$var wire 1 8" \reg3|GEN_REG:8:REG_BIT|q_internal~q\ $end
+$var wire 1 9" \reg7|GEN_REG:8:REG_BIT|q_internal~q\ $end
+$var wire 1 :" \seletor_saida|out_v[8]~24_combout\ $end
+$var wire 1 ;" \reg2|GEN_REG:8:REG_BIT|q_internal~q\ $end
+$var wire 1 <" \reg6|GEN_REG:8:REG_BIT|q_internal~q\ $end
+$var wire 1 =" \reg0|GEN_REG:8:REG_BIT|q_internal~q\ $end
+$var wire 1 >" \reg4|GEN_REG:8:REG_BIT|q_internal~q\ $end
+$var wire 1 ?" \seletor_saida|out_v[8]~25_combout\ $end
+$var wire 1 @" \seletor_saida|out_v[8]~26_combout\ $end
+$var wire 1 A" \in_v[9]~input_o\ $end
+$var wire 1 B" \reg1|GEN_REG:9:REG_BIT|q_internal~q\ $end
+$var wire 1 C" \reg5|GEN_REG:9:REG_BIT|q_internal~q\ $end
+$var wire 1 D" \reg3|GEN_REG:9:REG_BIT|q_internal~q\ $end
+$var wire 1 E" \reg7|GEN_REG:9:REG_BIT|q_internal~q\ $end
+$var wire 1 F" \seletor_saida|out_v[9]~27_combout\ $end
+$var wire 1 G" \reg2|GEN_REG:9:REG_BIT|q_internal~q\ $end
+$var wire 1 H" \reg6|GEN_REG:9:REG_BIT|q_internal~q\ $end
+$var wire 1 I" \reg0|GEN_REG:9:REG_BIT|q_internal~q\ $end
+$var wire 1 J" \reg4|GEN_REG:9:REG_BIT|q_internal~q\ $end
+$var wire 1 K" \seletor_saida|out_v[9]~28_combout\ $end
+$var wire 1 L" \seletor_saida|out_v[9]~29_combout\ $end
+$var wire 1 M" \in_v[10]~input_o\ $end
+$var wire 1 N" \reg1|GEN_REG:10:REG_BIT|q_internal~q\ $end
+$var wire 1 O" \reg5|GEN_REG:10:REG_BIT|q_internal~q\ $end
+$var wire 1 P" \reg3|GEN_REG:10:REG_BIT|q_internal~q\ $end
+$var wire 1 Q" \reg7|GEN_REG:10:REG_BIT|q_internal~q\ $end
+$var wire 1 R" \seletor_saida|out_v[10]~30_combout\ $end
+$var wire 1 S" \reg2|GEN_REG:10:REG_BIT|q_internal~q\ $end
+$var wire 1 T" \reg6|GEN_REG:10:REG_BIT|q_internal~q\ $end
+$var wire 1 U" \reg0|GEN_REG:10:REG_BIT|q_internal~q\ $end
+$var wire 1 V" \reg4|GEN_REG:10:REG_BIT|q_internal~q\ $end
+$var wire 1 W" \seletor_saida|out_v[10]~31_combout\ $end
+$var wire 1 X" \seletor_saida|out_v[10]~32_combout\ $end
+$var wire 1 Y" \in_v[11]~input_o\ $end
+$var wire 1 Z" \reg1|GEN_REG:11:REG_BIT|q_internal~q\ $end
+$var wire 1 [" \reg5|GEN_REG:11:REG_BIT|q_internal~q\ $end
+$var wire 1 \" \reg3|GEN_REG:11:REG_BIT|q_internal~q\ $end
+$var wire 1 ]" \reg7|GEN_REG:11:REG_BIT|q_internal~q\ $end
+$var wire 1 ^" \seletor_saida|out_v[11]~33_combout\ $end
+$var wire 1 _" \reg2|GEN_REG:11:REG_BIT|q_internal~q\ $end
+$var wire 1 `" \reg6|GEN_REG:11:REG_BIT|q_internal~q\ $end
+$var wire 1 a" \reg0|GEN_REG:11:REG_BIT|q_internal~q\ $end
+$var wire 1 b" \reg4|GEN_REG:11:REG_BIT|q_internal~q\ $end
+$var wire 1 c" \seletor_saida|out_v[11]~34_combout\ $end
+$var wire 1 d" \seletor_saida|out_v[11]~35_combout\ $end
+$var wire 1 e" \in_v[12]~input_o\ $end
+$var wire 1 f" \reg1|GEN_REG:12:REG_BIT|q_internal~q\ $end
+$var wire 1 g" \reg5|GEN_REG:12:REG_BIT|q_internal~q\ $end
+$var wire 1 h" \reg3|GEN_REG:12:REG_BIT|q_internal~q\ $end
+$var wire 1 i" \reg7|GEN_REG:12:REG_BIT|q_internal~q\ $end
+$var wire 1 j" \seletor_saida|out_v[12]~36_combout\ $end
+$var wire 1 k" \reg2|GEN_REG:12:REG_BIT|q_internal~q\ $end
+$var wire 1 l" \reg6|GEN_REG:12:REG_BIT|q_internal~q\ $end
+$var wire 1 m" \reg0|GEN_REG:12:REG_BIT|q_internal~q\ $end
+$var wire 1 n" \reg4|GEN_REG:12:REG_BIT|q_internal~q\ $end
+$var wire 1 o" \seletor_saida|out_v[12]~37_combout\ $end
+$var wire 1 p" \seletor_saida|out_v[12]~38_combout\ $end
+$var wire 1 q" \in_v[13]~input_o\ $end
+$var wire 1 r" \reg1|GEN_REG:13:REG_BIT|q_internal~q\ $end
+$var wire 1 s" \reg5|GEN_REG:13:REG_BIT|q_internal~q\ $end
+$var wire 1 t" \reg3|GEN_REG:13:REG_BIT|q_internal~q\ $end
+$var wire 1 u" \reg7|GEN_REG:13:REG_BIT|q_internal~q\ $end
+$var wire 1 v" \seletor_saida|out_v[13]~39_combout\ $end
+$var wire 1 w" \reg2|GEN_REG:13:REG_BIT|q_internal~q\ $end
+$var wire 1 x" \reg6|GEN_REG:13:REG_BIT|q_internal~q\ $end
+$var wire 1 y" \reg0|GEN_REG:13:REG_BIT|q_internal~q\ $end
+$var wire 1 z" \reg4|GEN_REG:13:REG_BIT|q_internal~q\ $end
+$var wire 1 {" \seletor_saida|out_v[13]~40_combout\ $end
+$var wire 1 |" \seletor_saida|out_v[13]~41_combout\ $end
+$var wire 1 }" \in_v[14]~input_o\ $end
+$var wire 1 ~" \reg1|GEN_REG:14:REG_BIT|q_internal~q\ $end
+$var wire 1 !# \reg5|GEN_REG:14:REG_BIT|q_internal~q\ $end
+$var wire 1 "# \reg3|GEN_REG:14:REG_BIT|q_internal~q\ $end
+$var wire 1 ## \reg7|GEN_REG:14:REG_BIT|q_internal~q\ $end
+$var wire 1 $# \seletor_saida|out_v[14]~42_combout\ $end
+$var wire 1 %# \reg2|GEN_REG:14:REG_BIT|q_internal~q\ $end
+$var wire 1 &# \reg6|GEN_REG:14:REG_BIT|q_internal~q\ $end
+$var wire 1 '# \reg0|GEN_REG:14:REG_BIT|q_internal~q\ $end
+$var wire 1 (# \reg4|GEN_REG:14:REG_BIT|q_internal~q\ $end
+$var wire 1 )# \seletor_saida|out_v[14]~43_combout\ $end
+$var wire 1 *# \seletor_saida|out_v[14]~44_combout\ $end
+$var wire 1 +# \in_v[15]~input_o\ $end
+$var wire 1 ,# \reg1|GEN_REG:15:REG_BIT|q_internal~q\ $end
+$var wire 1 -# \reg5|GEN_REG:15:REG_BIT|q_internal~q\ $end
+$var wire 1 .# \reg3|GEN_REG:15:REG_BIT|q_internal~q\ $end
+$var wire 1 /# \reg7|GEN_REG:15:REG_BIT|q_internal~q\ $end
+$var wire 1 0# \seletor_saida|out_v[15]~45_combout\ $end
+$var wire 1 1# \reg2|GEN_REG:15:REG_BIT|q_internal~q\ $end
+$var wire 1 2# \reg6|GEN_REG:15:REG_BIT|q_internal~q\ $end
+$var wire 1 3# \reg0|GEN_REG:15:REG_BIT|q_internal~q\ $end
+$var wire 1 4# \reg4|GEN_REG:15:REG_BIT|q_internal~q\ $end
+$var wire 1 5# \seletor_saida|out_v[15]~46_combout\ $end
+$var wire 1 6# \seletor_saida|out_v[15]~47_combout\ $end
+$var wire 1 7# \ALT_INV_load~input_o\ $end
+$var wire 1 8# \ALT_INV_address[1]~input_o\ $end
+$var wire 1 9# \ALT_INV_address[2]~input_o\ $end
+$var wire 1 :# \ALT_INV_address[0]~input_o\ $end
+$var wire 1 ;# \seletor_saida|ALT_INV_out_v[15]~46_combout\ $end
+$var wire 1 <# \reg4|GEN_REG:15:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 =# \reg0|GEN_REG:15:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 ># \reg6|GEN_REG:15:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 ?# \reg2|GEN_REG:15:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 @# \seletor_saida|ALT_INV_out_v[15]~45_combout\ $end
+$var wire 1 A# \reg7|GEN_REG:15:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 B# \reg3|GEN_REG:15:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 C# \reg5|GEN_REG:15:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 D# \reg1|GEN_REG:15:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 E# \seletor_saida|ALT_INV_out_v[14]~43_combout\ $end
+$var wire 1 F# \reg4|GEN_REG:14:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 G# \reg0|GEN_REG:14:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 H# \reg6|GEN_REG:14:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 I# \reg2|GEN_REG:14:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 J# \seletor_saida|ALT_INV_out_v[14]~42_combout\ $end
+$var wire 1 K# \reg7|GEN_REG:14:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 L# \reg3|GEN_REG:14:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 M# \reg5|GEN_REG:14:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 N# \reg1|GEN_REG:14:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 O# \seletor_saida|ALT_INV_out_v[13]~40_combout\ $end
+$var wire 1 P# \reg4|GEN_REG:13:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 Q# \reg0|GEN_REG:13:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 R# \reg6|GEN_REG:13:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 S# \reg2|GEN_REG:13:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 T# \seletor_saida|ALT_INV_out_v[13]~39_combout\ $end
+$var wire 1 U# \reg7|GEN_REG:13:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 V# \reg3|GEN_REG:13:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 W# \reg5|GEN_REG:13:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 X# \reg1|GEN_REG:13:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 Y# \seletor_saida|ALT_INV_out_v[12]~37_combout\ $end
+$var wire 1 Z# \reg4|GEN_REG:12:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 [# \reg0|GEN_REG:12:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 \# \reg6|GEN_REG:12:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 ]# \reg2|GEN_REG:12:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 ^# \seletor_saida|ALT_INV_out_v[12]~36_combout\ $end
+$var wire 1 _# \reg7|GEN_REG:12:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 `# \reg3|GEN_REG:12:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 a# \reg5|GEN_REG:12:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 b# \reg1|GEN_REG:12:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 c# \seletor_saida|ALT_INV_out_v[11]~34_combout\ $end
+$var wire 1 d# \reg4|GEN_REG:11:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 e# \reg0|GEN_REG:11:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 f# \reg6|GEN_REG:11:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 g# \reg2|GEN_REG:11:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 h# \seletor_saida|ALT_INV_out_v[11]~33_combout\ $end
+$var wire 1 i# \reg7|GEN_REG:11:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 j# \reg3|GEN_REG:11:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 k# \reg5|GEN_REG:11:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 l# \reg1|GEN_REG:11:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 m# \seletor_saida|ALT_INV_out_v[10]~31_combout\ $end
+$var wire 1 n# \reg4|GEN_REG:10:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 o# \reg0|GEN_REG:10:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 p# \reg6|GEN_REG:10:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 q# \reg2|GEN_REG:10:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 r# \seletor_saida|ALT_INV_out_v[10]~30_combout\ $end
+$var wire 1 s# \reg7|GEN_REG:10:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 t# \reg3|GEN_REG:10:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 u# \reg5|GEN_REG:10:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 v# \reg1|GEN_REG:10:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 w# \seletor_saida|ALT_INV_out_v[9]~28_combout\ $end
+$var wire 1 x# \reg4|GEN_REG:9:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 y# \reg0|GEN_REG:9:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 z# \reg6|GEN_REG:9:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 {# \reg2|GEN_REG:9:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 |# \seletor_saida|ALT_INV_out_v[9]~27_combout\ $end
+$var wire 1 }# \reg7|GEN_REG:9:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 ~# \reg3|GEN_REG:9:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 !$ \reg5|GEN_REG:9:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 "$ \reg1|GEN_REG:9:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 #$ \seletor_saida|ALT_INV_out_v[8]~25_combout\ $end
+$var wire 1 $$ \reg4|GEN_REG:8:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 %$ \reg0|GEN_REG:8:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 &$ \reg6|GEN_REG:8:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 '$ \reg2|GEN_REG:8:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 ($ \seletor_saida|ALT_INV_out_v[8]~24_combout\ $end
+$var wire 1 )$ \reg7|GEN_REG:8:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 *$ \reg3|GEN_REG:8:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 +$ \reg5|GEN_REG:8:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 ,$ \reg1|GEN_REG:8:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 -$ \seletor_saida|ALT_INV_out_v[7]~22_combout\ $end
+$var wire 1 .$ \reg4|GEN_REG:7:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 /$ \reg0|GEN_REG:7:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 0$ \reg6|GEN_REG:7:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 1$ \reg2|GEN_REG:7:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 2$ \seletor_saida|ALT_INV_out_v[7]~21_combout\ $end
+$var wire 1 3$ \reg7|GEN_REG:7:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 4$ \reg3|GEN_REG:7:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 5$ \reg5|GEN_REG:7:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 6$ \reg1|GEN_REG:7:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 7$ \seletor_saida|ALT_INV_out_v[6]~19_combout\ $end
+$var wire 1 8$ \reg4|GEN_REG:6:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 9$ \reg0|GEN_REG:6:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 :$ \reg6|GEN_REG:6:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 ;$ \reg2|GEN_REG:6:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 <$ \seletor_saida|ALT_INV_out_v[6]~18_combout\ $end
+$var wire 1 =$ \reg7|GEN_REG:6:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 >$ \reg3|GEN_REG:6:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 ?$ \reg5|GEN_REG:6:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 @$ \reg1|GEN_REG:6:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 A$ \seletor_saida|ALT_INV_out_v[5]~16_combout\ $end
+$var wire 1 B$ \reg4|GEN_REG:5:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 C$ \reg0|GEN_REG:5:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 D$ \reg6|GEN_REG:5:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 E$ \reg2|GEN_REG:5:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 F$ \seletor_saida|ALT_INV_out_v[5]~15_combout\ $end
+$var wire 1 G$ \reg7|GEN_REG:5:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 H$ \reg3|GEN_REG:5:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 I$ \reg5|GEN_REG:5:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 J$ \reg1|GEN_REG:5:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 K$ \seletor_saida|ALT_INV_out_v[4]~13_combout\ $end
+$var wire 1 L$ \reg4|GEN_REG:4:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 M$ \reg0|GEN_REG:4:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 N$ \reg6|GEN_REG:4:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 O$ \reg2|GEN_REG:4:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 P$ \seletor_saida|ALT_INV_out_v[4]~12_combout\ $end
+$var wire 1 Q$ \reg7|GEN_REG:4:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 R$ \reg3|GEN_REG:4:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 S$ \reg5|GEN_REG:4:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 T$ \reg1|GEN_REG:4:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 U$ \seletor_saida|ALT_INV_out_v[3]~10_combout\ $end
+$var wire 1 V$ \reg4|GEN_REG:3:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 W$ \reg0|GEN_REG:3:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 X$ \reg6|GEN_REG:3:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 Y$ \reg2|GEN_REG:3:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 Z$ \seletor_saida|ALT_INV_out_v[3]~9_combout\ $end
+$var wire 1 [$ \reg7|GEN_REG:3:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 \$ \reg3|GEN_REG:3:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 ]$ \reg5|GEN_REG:3:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 ^$ \reg1|GEN_REG:3:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 _$ \seletor_saida|ALT_INV_out_v[2]~7_combout\ $end
+$var wire 1 `$ \reg4|GEN_REG:2:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 a$ \reg0|GEN_REG:2:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 b$ \reg6|GEN_REG:2:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 c$ \reg2|GEN_REG:2:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 d$ \seletor_saida|ALT_INV_out_v[2]~6_combout\ $end
+$var wire 1 e$ \reg7|GEN_REG:2:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 f$ \reg3|GEN_REG:2:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 g$ \reg5|GEN_REG:2:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 h$ \reg1|GEN_REG:2:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 i$ \seletor_saida|ALT_INV_out_v[1]~4_combout\ $end
+$var wire 1 j$ \reg4|GEN_REG:1:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 k$ \reg0|GEN_REG:1:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 l$ \reg6|GEN_REG:1:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 m$ \reg2|GEN_REG:1:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 n$ \seletor_saida|ALT_INV_out_v[1]~3_combout\ $end
+$var wire 1 o$ \reg7|GEN_REG:1:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 p$ \reg3|GEN_REG:1:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 q$ \reg5|GEN_REG:1:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 r$ \reg1|GEN_REG:1:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 s$ \seletor_saida|ALT_INV_out_v[0]~1_combout\ $end
+$var wire 1 t$ \reg4|GEN_REG:0:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 u$ \reg0|GEN_REG:0:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 v$ \reg6|GEN_REG:0:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 w$ \reg2|GEN_REG:0:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 x$ \seletor_saida|ALT_INV_out_v[0]~0_combout\ $end
+$var wire 1 y$ \reg7|GEN_REG:0:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 z$ \reg3|GEN_REG:0:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 {$ \reg5|GEN_REG:0:REG_BIT|ALT_INV_q_internal~q\ $end
+$var wire 1 |$ \reg1|GEN_REG:0:REG_BIT|ALT_INV_q_internal~q\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0$
+15
+0F
+1G
+xH
+1I
+1J
+1K
+1L
+1M
+1N
+0O
+1`
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+1+!
+0,!
+0-!
+0.!
+0/!
+00!
+01!
+02!
+03!
+04!
+05!
+06!
+07!
+08!
+19!
+0:!
+0;!
+0<!
+0=!
+0>!
+0?!
+0@!
+0A!
+0B!
+0C!
+0D!
+0E!
+0F!
+0G!
+0H!
+0I!
+0J!
+1K!
+0L!
+0M!
+0N!
+0O!
+0P!
+0Q!
+0R!
+0S!
+0T!
+0U!
+0V!
+0W!
+0X!
+0Y!
+0Z!
+0[!
+0\!
+0]!
+0^!
+0_!
+0`!
+0a!
+0b!
+1c!
+0d!
+0e!
+0f!
+0g!
+0h!
+0i!
+0j!
+0k!
+0l!
+0m!
+0n!
+0o!
+0p!
+0q!
+0r!
+0s!
+0t!
+0u!
+0v!
+0w!
+0x!
+0y!
+0z!
+0{!
+0|!
+0}!
+0~!
+0!"
+0""
+0#"
+0$"
+0%"
+0&"
+0'"
+0("
+0)"
+0*"
+0+"
+0,"
+0-"
+0."
+0/"
+00"
+01"
+02"
+03"
+04"
+05"
+06"
+07"
+08"
+09"
+0:"
+0;"
+0<"
+0="
+0>"
+0?"
+0@"
+0A"
+0B"
+0C"
+0D"
+0E"
+0F"
+0G"
+0H"
+0I"
+0J"
+0K"
+0L"
+0M"
+0N"
+0O"
+0P"
+0Q"
+0R"
+0S"
+0T"
+0U"
+0V"
+0W"
+0X"
+0Y"
+0Z"
+0["
+0\"
+0]"
+0^"
+0_"
+0`"
+0a"
+0b"
+0c"
+0d"
+0e"
+0f"
+0g"
+0h"
+0i"
+0j"
+0k"
+0l"
+0m"
+0n"
+0o"
+0p"
+0q"
+0r"
+0s"
+0t"
+0u"
+0v"
+0w"
+0x"
+0y"
+0z"
+0{"
+0|"
+0}"
+0~"
+0!#
+0"#
+0##
+0$#
+0%#
+0&#
+0'#
+0(#
+0)#
+0*#
+0+#
+0,#
+0-#
+0.#
+0/#
+00#
+01#
+02#
+03#
+04#
+05#
+06#
+07#
+18#
+19#
+1:#
+1;#
+1<#
+1=#
+1>#
+1?#
+1@#
+1A#
+1B#
+1C#
+1D#
+1E#
+1F#
+1G#
+1H#
+1I#
+1J#
+1K#
+1L#
+1M#
+1N#
+1O#
+1P#
+1Q#
+1R#
+1S#
+1T#
+1U#
+1V#
+1W#
+1X#
+1Y#
+1Z#
+1[#
+1\#
+1]#
+1^#
+1_#
+1`#
+1a#
+1b#
+1c#
+1d#
+1e#
+1f#
+1g#
+1h#
+1i#
+1j#
+1k#
+1l#
+1m#
+1n#
+1o#
+1p#
+1q#
+1r#
+1s#
+1t#
+1u#
+1v#
+1w#
+1x#
+1y#
+1z#
+1{#
+1|#
+1}#
+1~#
+1!$
+1"$
+1#$
+1$$
+1%$
+1&$
+1'$
+1($
+1)$
+1*$
+1+$
+1,$
+1-$
+1.$
+1/$
+10$
+11$
+12$
+13$
+14$
+15$
+16$
+17$
+18$
+19$
+1:$
+1;$
+1<$
+1=$
+1>$
+1?$
+1@$
+1A$
+1B$
+1C$
+1D$
+1E$
+1F$
+1G$
+1H$
+1I$
+1J$
+1K$
+1L$
+1M$
+1N$
+1O$
+1P$
+1Q$
+1R$
+1S$
+1T$
+1U$
+1V$
+1W$
+1X$
+1Y$
+1Z$
+1[$
+1\$
+1]$
+1^$
+1_$
+1`$
+1a$
+1b$
+1c$
+1d$
+1e$
+1f$
+1g$
+1h$
+1i$
+1j$
+1k$
+1l$
+1m$
+1n$
+1o$
+1p$
+1q$
+1r$
+1s$
+1t$
+1u$
+1v$
+1w$
+1x$
+1y$
+1z$
+1{$
+1|$
+0!
+0"
+0#
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+0/
+10
+01
+12
+03
+04
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+1[
+0\
+1]
+0^
+0_
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+$end
+#100000
+1$
+1O
+1'!
+1S!
+1k!
+0M$
+0a$
+1U!
+1m!
+0K$
+0_$
+1V!
+1n!
+1x
+1v
+1o
+1q
+1C
+1A
+#200000
+0$
+1!
+1"
+00
+11
+02
+14
+0O
+1b
+1a
+1_
+0]
+1\
+0[
+0c!
+1W!
+0K!
+1(!
+1)!
+1*!
+0'!
+08#
+09#
+17!
+09!
+0U!
+0m!
+1K$
+1_$
+0V!
+0n!
+0x
+0v
+0o
+0q
+0C
+0A
+#300000
+1$
+1O
+1'!
+18!
+1^!
+0X$
+0v$
+1=!
+1a!
+0U$
+0s$
+1>!
+1b!
+1w
+1t
+1p
+1s
+1E
+1B
+#400000
+0$
+0!
+0"
+05
+0O
+0b
+0a
+0`
+0+!
+0)!
+0*!
+0'!
+18#
+19#
+17#
+07!
+0=!
+1U!
+0a!
+1m!
+0K$
+1U$
+0_$
+1s$
+0>!
+1V!
+0b!
+1n!
+1x
+0w
+1v
+0t
+1o
+0p
+1q
+0s
+0E
+1C
+0B
+1A
+#500000
+1$
+1O
+1'!
+#600000
+0$
+0O
+0'!
+#700000
+1$
+1#
+1O
+1c
+1&!
+1'!
+0:#
+0V!
+0n!
+0x
+0v
+0o
+0q
+0C
+0A
+#800000
+0#
+1!
+1"
+0c
+1b
+1a
+1)!
+1*!
+0&!
+1:#
+08#
+09#
+1=!
+0U!
+1a!
+0m!
+1V!
+1n!
+1K$
+0U$
+1_$
+0s$
+1>!
+0V!
+1b!
+0n!
+1x
+1v
+1o
+1q
+1C
+1A
+0x
+1w
+0v
+1t
+0o
+1p
+0q
+1s
+1E
+0C
+1B
+0A
+#1000000
