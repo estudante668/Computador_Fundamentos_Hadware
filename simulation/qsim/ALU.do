@@ -1,7 +1,7 @@
 onerror {exit -code 1}
 vlib work
 vcom -work work ALU.vho
-vcom -work work Waveform13.vwf.vht
+vcom -work work Waveform14.vwf.vht
 vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ALU_vhd_vec_tst
 vcd file -direction ALU.msim.vcd
 vcd add -internal ALU_vhd_vec_tst/*

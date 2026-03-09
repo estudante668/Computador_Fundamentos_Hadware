@@ -1,0 +1,7 @@
+|Bit_Register
+clk => q_internal.CLK
+in_v => q_internal.DATAIN
+load => q_internal.ENA
+out_v <= q_internal.DB_MAX_OUTPUT_PORT_TYPE
+
+

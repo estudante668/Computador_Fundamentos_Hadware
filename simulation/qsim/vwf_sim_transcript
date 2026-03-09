@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU -c ALU --vector_source="C:/Computer_Nand/Waveform13.vwf" --testbench_file="C:/Computer_Nand/simulation/qsim/Waveform13.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Bit_Register -c Bit_Register --vector_source="C:/Computer_Nand/Waveform15.vwf" --testbench_file="C:/Computer_Nand/simulation/qsim/Waveform15.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,16 +25,16 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sun Mar 08 15:47:23 2026
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU -c ALU --vector_source=C:/Computer_Nand/Waveform13.vwf --testbench_file=C:/Computer_Nand/simulation/qsim/Waveform13.vwf.vht
-Info (119006): Selected device 5CGXFC7C7F23C8 for design "ALU"
+    Info: Processing started: Mon Mar 09 09:16:48 2026
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Bit_Register -c Bit_Register --vector_source=C:/Computer_Nand/Waveform15.vwf --testbench_file=C:/Computer_Nand/simulation/qsim/Waveform15.vwf.vht
+Info (119006): Selected device 5CGXFC7C7F23C8 for design "Bit_Register"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Computer_Nand/simulation/qsim/" ALU -c ALU
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Computer_Nand/simulation/qsim/" Bit_Register -c Bit_Register
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -52,14 +52,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sun Mar 08 15:47:24 2026
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Computer_Nand/simulation/qsim/ ALU -c ALU
-Info (119006): Selected device 5CGXFC7C7F23C8 for design "ALU"
+    Info: Processing started: Mon Mar 09 09:16:49 2026
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Computer_Nand/simulation/qsim/ Bit_Register -c Bit_Register
+Info (119006): Selected device 5CGXFC7C7F23C8 for design "Bit_Register"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file ALU.vho in folder "C:/Computer_Nand/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Bit_Register.vho in folder "C:/Computer_Nand/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4730 megabytes
-    Info: Processing ended: Sun Mar 08 15:47:25 2026
+    Info: Peak virtual memory: 4729 megabytes
+    Info: Processing ended: Mon Mar 09 09:16:50 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -67,83 +67,87 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-C:/Computer_Nand/simulation/qsim/ALU.do generated.
+C:/Computer_Nand/simulation/qsim/Bit_Register.do generated.
 
 Completed successfully. 
 
 **** Running the ModelSim simulation ****
 
-c:/intelfpga_lite/18.1/modelsim_ase/win32aloem//vsim -c -do ALU.do
+c:/intelfpga_lite/18.1/modelsim_ase/win32aloem//vsim -c -do Bit_Register.do
 
 Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
-# do ALU.do
 
+# do Bit_Register.do
 # ** Warning: (vlib-34) Library already exists at "work".
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:47:26 on Mar 08,2026
-# vcom -work work ALU.vho 
+# Start time: 09:16:51 on Mar 09,2026
+# vcom -work work Bit_Register.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package altera_lnsim_components
-
 # -- Loading package VITAL_Timing
 # -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
-# -- Compiling entity ALU
-# -- Compiling architecture structure of ALU
-# End time: 15:47:26 on Mar 08,2026, Elapsed time: 0:00:00
+# -- Compiling entity Bit_Register
+# -- Compiling architecture structure of Bit_Register
+# End time: 09:16:51 on Mar 09,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:47:26 on Mar 08,2026
-# vcom -work work Waveform13.vwf.vht 
 
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:16:51 on Mar 09,2026
+# vcom -work work Waveform15.vwf.vht 
 # -- Loading package STANDARD
+
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity ALU_vhd_vec_tst
-# -- Compiling architecture ALU_arch of ALU_vhd_vec_tst
-# End time: 15:47:26 on Mar 08,2026, Elapsed time: 0:00:00
+# -- Compiling entity Bit_Register_vhd_vec_tst
+# -- Compiling architecture Bit_Register_arch of Bit_Register_vhd_vec_tst
+# End time: 09:16:52 on Mar 09,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ALU_vhd_vec_tst 
-# Start time: 15:47:26 on Mar 08,2026
+# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Bit_Register_vhd_vec_tst 
+# Start time: 09:16:52 on Mar 09,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.alu_vhd_vec_tst(alu_arch)
-# Loading altera_lnsim.altera_lnsim_components
+# Loading work.bit_register_vhd_vec_tst(bit_register_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading altera_lnsim.altera_lnsim_components
 # Loading cyclonev.cyclonev_atom_pack(body)
 # Loading cyclonev.cyclonev_components
-# Loading work.alu(structure)
+# Loading work.bit_register(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
-# ** Warning: Design size of 20221 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-# after#32
+# Loading altera.dffeas(vital_dffeas)
+# after#34
 
-# End time: 15:47:27 on Mar 08,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
+# End time: 09:16:52 on Mar 09,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Computer_Nand/Waveform13.vwf...
+Reading C:/Computer_Nand/Waveform15.vwf...
 
-Reading C:/Computer_Nand/simulation/qsim/ALU.msim.vcd...
+Reading C:/Computer_Nand/simulation/qsim/Bit_Register.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Computer_Nand/simulation/qsim/ALU_20260308154727.sim.vwf
+Writing the resulting VWF to C:/Computer_Nand/simulation/qsim/Bit_Register_20260309091653.sim.vwf
 
 Finished VCD to VWF conversion.
 

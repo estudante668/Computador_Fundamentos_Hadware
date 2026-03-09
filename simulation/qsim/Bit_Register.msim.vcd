@@ -1,0 +1,93 @@
+$comment
+	File created using the following command:
+		vcd file Bit_Register.msim.vcd -direction
+$end
+$date
+	Mon Mar 09 09:16:52 2026
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module bit_register_vhd_vec_tst $end
+$var wire 1 ! clk $end
+$var wire 1 " in_v $end
+$var wire 1 # load $end
+$var wire 1 $ out_v $end
+
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var wire 1 ( devoe $end
+$var wire 1 ) devclrn $end
+$var wire 1 * devpor $end
+$var wire 1 + ww_devoe $end
+$var wire 1 , ww_devclrn $end
+$var wire 1 - ww_devpor $end
+$var wire 1 . ww_clk $end
+$var wire 1 / ww_in_v $end
+$var wire 1 0 ww_load $end
+$var wire 1 1 ww_out_v $end
+$var wire 1 2 \out_v~output_o\ $end
+$var wire 1 3 \clk~input_o\ $end
+$var wire 1 4 \in_v~input_o\ $end
+$var wire 1 5 \load~input_o\ $end
+$var wire 1 6 \q_internal~0_combout\ $end
+$var wire 1 7 \q_internal~q\ $end
+$var wire 1 8 \ALT_INV_q_internal~q\ $end
+$var wire 1 9 \ALT_INV_in_v~input_o\ $end
+$var wire 1 : \ALT_INV_load~input_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+1#
+0$
+0%
+1&
+x'
+1(
+1)
+1*
+1+
+1,
+1-
+0.
+1/
+10
+01
+02
+03
+14
+15
+16
+07
+18
+09
+0:
+$end
+#100000
+1!
+1.
+13
+17
+08
+12
+11
+1$
+#200000
+0!
+0#
+0.
+00
+05
+03
+1:
+#1000000

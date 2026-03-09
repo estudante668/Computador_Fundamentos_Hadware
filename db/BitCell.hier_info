@@ -1,0 +1,8 @@
+|BitCell
+clk => q.CLK
+inp => muxout.IN0
+load => muxout.IN1
+load => muxout.IN1
+outp <= q.DB_MAX_OUTPUT_PORT_TYPE
+
+

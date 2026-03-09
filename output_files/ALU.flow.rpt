@@ -1,5 +1,5 @@
 Flow report for ALU
-Sun Mar 08 15:47:25 2026
+Sun Mar 08 16:38:54 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun Mar 08 15:47:25 2026       ;
+; Flow Status                     ; Successful - Sun Mar 08 16:38:54 2026       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; ALU                                         ;
 ; Top-level Entity Name           ; ALU                                         ;
@@ -130,7 +130,11 @@ refer to the applicable agreement for further details.
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4730 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4730 MB             ; 00:00:01                           ;
-; Total                ; 00:01:08     ; --                      ; --                  ; 00:01:11                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4730 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4730 MB             ; 00:00:01                           ;
+; Total                ; 00:01:12     ; --                      ; --                  ; 00:01:15                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -140,6 +144,10 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; DESKTOP-UUHGSRK  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-UUHGSRK  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-UUHGSRK  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-UUHGSRK  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-UUHGSRK  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-UUHGSRK  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-UUHGSRK  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-UUHGSRK  ; Windows 10 ; 10.0       ; x86_64         ;
@@ -222,6 +230,10 @@ quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU -c ALU --vector_source=C:/Computer_Nand/Waveform13.vwf --testbench_file=C:/Computer_Nand/simulation/qsim/Waveform13.vwf.vht
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Computer_Nand/simulation/qsim/ ALU -c ALU
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU -c ALU --vector_source=C:/Computer_Nand/Waveform13.vwf --testbench_file=C:/Computer_Nand/simulation/qsim/Waveform13.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Computer_Nand/simulation/qsim/ ALU -c ALU
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU -c ALU --vector_source=C:/Computer_Nand/Waveform14.vwf --testbench_file=C:/Computer_Nand/simulation/qsim/Waveform14.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Computer_Nand/simulation/qsim/ ALU -c ALU
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ALU -c ALU --vector_source=C:/Computer_Nand/Waveform14.vwf --testbench_file=C:/Computer_Nand/simulation/qsim/Waveform14.vwf.vht
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Computer_Nand/simulation/qsim/ ALU -c ALU
 
 

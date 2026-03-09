@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Computer_Nand/Bit_Register.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Computer_Nand/db/Bit_Register.cbx.xml
+design_name = Bit_Register
+instance = comp, \out_v~output\, out_v~output, Bit_Register, 1
+instance = comp, \clk~input\, clk~input, Bit_Register, 1
+instance = comp, \in_v~input\, in_v~input, Bit_Register, 1
+instance = comp, \load~input\, load~input, Bit_Register, 1
+instance = comp, \q_internal~0\, q_internal~0, Bit_Register, 1
